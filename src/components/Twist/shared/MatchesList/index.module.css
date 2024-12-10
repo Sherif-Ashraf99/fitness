@@ -1,0 +1,26 @@
+.match-card:not(:last-of-type) {
+  margin-block-end: 1rem;
+}
+.skeleton {
+  height: 200px;
+  margin-block: 5px;
+}
+
+.no-matches-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: var(--maastricht-blue);
+  color: var(--off-white);
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+:global(.al-ahly) .no-matches-card {
+  background-color: var(--light-black);
+}
+
+.no-matches-card.ahly-page {
+  background-color: var(--light-black);
+}

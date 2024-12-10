@@ -1,0 +1,79 @@
+.AhlyTopCarousel {
+  margin-block: 20px;
+}
+
+.tournament-team-loader,
+.AhlyTopCarousel .tournament-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-black);
+  color: var(--white);
+  border-radius: 6px;
+  height: 300px;
+}
+.tournament-team-loader {
+  padding-block: 1rem;
+}
+.tournament-team-loader span {
+  flex-grow: 1;
+}
+.tournament-team-loader > span:first-child {
+  width: 50%;
+}
+.tournament-team-loader > span:nth-child(2) > span {
+  width: 8rem;
+  height: 8rem;
+}
+.tournament-team-loader > span:last-child {
+  width: 25%;
+}
+.tournament-team-loader > span > span {
+  height: 2rem;
+}
+
+.tournament-team h3 {
+  font-weight: 700;
+  text-align: center;
+  padding-block-start: 1rem;
+}
+
+.tournament-team img {
+  width: 100%;
+  object-fit: contain;
+  max-width: 150px;
+}
+
+.tournament-team span {
+  margin-block-end: 10px;
+}
+
+.tournament-team span {
+  font-size: 25px !important;
+}
+
+.AhlyTopCarousel :global(.swiper-button-next),
+.AhlyTopCarousel :global(.swiper-button-prev) {
+  background-color: var(--white);
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.AhlyTopCarousel :global(.swiper-button-next)::after,
+.AhlyTopCarousel :global(.swiper-button-prev)::after {
+  color: var(--light-black);
+  font-weight: 900;
+  font-size: 35px;
+  padding: 20px;
+}
+
+.AhlyTopCarousel :global(.swiper) {
+  width: 100%;
+  height: 100%;
+}
+
+.AhlyTopCarousel :global(.swiper-slide) {
+  width: 100%;
+}

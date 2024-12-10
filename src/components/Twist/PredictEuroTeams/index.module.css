@@ -1,0 +1,133 @@
+.modal-euro-body {
+  background-color: var(--azureish-white);
+  border-radius: 6px;
+}
+
+.modal-euro-body > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal-euro-header {
+  background-color: var(--azureish-white);
+}
+
+.modal-euro-body h4 {
+  font-size: 24px;
+  color: var(--palatinate-blue);
+  font-family: "Norsal-Bold";
+  font-weight: 700;
+  text-align: center;
+}
+
+.predict-resultForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.select__wrapper {
+  position: relative;
+}
+
+.predict-resultForm option,
+.predict-resultForm select {
+  cursor: pointer;
+}
+
+.predict-resultForm img {
+  width: 60px;
+  height: 60px;
+}
+
+.predict-resultForm select {
+  padding-block: 8px;
+  padding-inline: 30px 80px;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.predict-resultForm figcaption {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--palatinate-blue);
+}
+
+.predict-resultForm select {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--palatinate-blue);
+  text-align: center;
+  padding: 0;
+  width: 120px;
+}
+
+.predict-resultForm option {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--palatinate-blue);
+}
+
+.select__wrapper::after {
+  content: "⮟";
+  position: absolute;
+  font-size: 20px;
+  color: #999999;
+  top: 0;
+  left: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__wrapper {
+  grid-column: 1 / -1;
+  margin-block: 130px 100px;
+}
+
+.button__wrapper > button,
+.subscribe-btn {
+  border-radius: 6px;
+  padding: 7px 50px;
+  background-color: #41b13c;
+  color: var(--white);
+  width: fit-content;
+  border: none;
+}
+
+.btn-primary:hover,
+.subscribe-btn:hover {
+  background-color: #41b13c !important;
+  color: var(--white) !important;
+  border-color: none !important;
+}
+
+.success-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--palatinate-blue);
+  text-align: center;
+}
+
+.win {
+  width: 100%;
+  margin-block-end: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .predict-resultForm {
+    grid-template-columns: auto;
+    row-gap: 30px;
+  }
+
+  .button__wrapper {
+    grid-column: 1;
+    margin-block: 100px;
+  }
+}
+
+.modal__content .predictAfconAndWin-submit-button:disabled {
+  background-color: #41b13c;
+}

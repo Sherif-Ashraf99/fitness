@@ -1,0 +1,356 @@
+* {
+  font-family: "Norsal-Light";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Norsal-Light";
+  font-weight: 300;
+  src: url("./assets/fonts/Norsal-Light.otf");
+}
+
+@font-face {
+  font-family: "Norsal-Regular";
+  font-weight: 400;
+  src: url("./assets/fonts/Norsal-Regular.otf");
+}
+
+@font-face {
+  font-family: "Norsal-SemiBold";
+  font-weight: 600;
+  src: url("./assets/fonts/Norsal-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Norsal-ExtraBold";
+  font-weight: 800;
+  src: url("./assets/fonts/Norsal-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: "Norsal-Bold";
+  font-weight: 700;
+  src: url("./assets/fonts/Norsal-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Norsal-Medium";
+  font-weight: 500;
+  src: url("./assets/fonts/Norsal-Medium.otf");
+}
+
+:root {
+  --white: #ffffff;
+  --off-white: #e2ecf4;
+  --dark-navy-blue: #021433;
+  --light-green: #62d66e;
+  --lighter-green: #70f67d;
+  --guppie-green: #00ff87;
+  --robin-egg-blue: #00ddb3;
+  --catalina-blue: #052f73;
+  --dark-cornflower-blue: #23478252;
+  --navy-blue: #052f74;
+  --cool-black: #042967;
+  --maastricht-blue: #03183a;
+  --anti-flash-white: #f0f0f0;
+  --aero: #7ec2ee;
+  --main-chinese-silver: #c9c9c9;
+  --chinese-silver: #c9c9c981;
+  --bg-gradiant-1: #03193b;
+  --bg-gradiant-2: #062f72;
+  --bg-gradiant-3: #152d52;
+  --blue-ryb: #0251ff;
+  --chinese-white: #dae7e7;
+  --gray-color: #e6e6e6;
+  --cool-black-two: #0b2e67;
+  --light-black: #181818;
+  --pink-swan: #b4b4b4;
+  --light-grey: #d5d5d5;
+  --oxford-blue: #031c45;
+  --white-10-opacity: #ffffff1a;
+  --dim-gray: #707070;
+  --red: #ff0000;
+  --cool-red: #d31332;
+  --dark-red: #cb0002;
+  --light-steel-blue: #aac7e0;
+  --oxford-blue: #021d48;
+  --Suva-Grey: #898989;
+  --xd-screen-width: 1920;
+  --current-screen-width: calc(100vw + 24px);
+  --resizing-xd-ratio: var(--current-screen-width) / var(--xd-screen-width);
+  /* for skeleton */
+  --white-opacity: rgba(255, 255, 255, 0.1);
+  --space-cadet: #162d51;
+  --periwinkle-blue: #aabcff;
+  --royal-blue: #4576ff;
+  --dark-blue: #05275c;
+  --prussian-blue: #00315a;
+  --black: #00000045;
+  --imperial-red: #e8253d;
+  --light-silver: #d9d9d9;
+  --outer-space: #444444;
+  --lavender: #eaebff;
+  --eerie-black: #1e1e1e;
+  --midnight-blue: #004492;
+  --carnelian: #b42318;
+  --emerald: #58c167;
+  --palatinate-blue: #143dda;
+  --azureish-white: #dde3f9;
+  --persian-blue: #1134ba;
+  --palatinate-blue-two: #143ddab2;
+  --smoky-black: #0d0d0d;
+  --Burlywood: #d7c37a;
+  --eerie-black-two: #1a1a1a57;
+  --black: #000000;
+  --maastricht-blue-two: #051c41;
+  --honolulu-blue: #0766ad;
+  --amaranth: #e62644;
+}
+
+/*========================= CUSTOME BOOTSTRAP UTILITY CLASSES =========================*/
+/*========================= padding start =========================*/
+.cps-0 {
+  padding-inline-start: 0 !important;
+}
+
+.cps-1 {
+  padding-inline-start: 0.25rem !important;
+}
+
+.cps-2 {
+  padding-inline-start: 0.5rem !important;
+}
+
+.cps-3 {
+  padding-inline-start: 1rem !important;
+}
+
+.cps-4 {
+  padding-inline-start: 1.5rem !important;
+}
+
+.cps-5 {
+  padding-inline-start: 3rem !important;
+}
+
+/* ========================= padding end =========================*/
+.cpe-1 {
+  padding-inline-end: 0.25rem !important;
+}
+
+.cpe-2 {
+  padding-inline-end: 0.5rem !important;
+}
+
+.cpe-3 {
+  padding-inline-end: 1rem !important;
+}
+
+.cpe-4 {
+  padding-inline-end: 1.5rem !important;
+}
+
+.cpe-5 {
+  padding-inline-end: 3rem !important;
+}
+
+/*========================= margine start =========================*/
+.cms-0 {
+  margin-inline-start: 0 !important;
+}
+
+.cms-1 {
+  margin-inline-start: 0.25rem !important;
+}
+
+.cms-2 {
+  margin-inline-start: 0.5rem !important;
+}
+
+.cms-3 {
+  margin-inline-start: 1rem !important;
+}
+
+.cms-4 {
+  margin-inline-start: 1.5rem !important;
+}
+
+.cms-5 {
+  margin-inline-start: 3rem !important;
+}
+
+/*========================= margine start =========================*/
+
+.cme-1 {
+  margin-inline-end: 0.25rem !important;
+}
+
+.cme-2 {
+  margin-inline-end: 0.5rem !important;
+}
+
+.cme-3 {
+  margin-inline-end: 1rem !important;
+}
+
+.cme-4 {
+  margin-inline-end: 1.5rem !important;
+}
+
+.cme-5 {
+  margin-inline-end: 3rem !important;
+}
+
+html:lang(ar) {
+  direction: rtl;
+}
+
+body {
+  color: var(--white);
+  /* background: transparent linear-gradient(180deg, var(--bg-gradiant-1) 0%, var(--bg-gradiant-2) 46%, var(--bg-gradiant-3) 100%) 0% 0% no-repeat padding-box; */
+  background: transparent
+    linear-gradient(
+      180deg,
+      var(--space-cadet) 0%,
+      var(--catalina-blue) 49%,
+      var(--maastricht-blue) 100%
+    )
+    0% 0% no-repeat padding-box;
+}
+
+body .main-layout.al-ahly {
+  background-color: var(--white);
+}
+
+body:has(.main-layout main[data-current-page="euro-page"]),
+body:has(.main-layout div[data-is-euro-tournament="true"]) {
+  background: var(--azureish-white);
+}
+
+body:has(div[data-current-page="olympics-page"]) {
+  background: var(--white);
+}
+
+.header-navlinks-modal {
+  margin-block-start: 66px;
+  padding-inline: 0 !important;
+}
+
+.header-navlinks-modal::-webkit-scrollbar {
+  width: 0;
+}
+
+img {
+  object-fit: contain;
+}
+/*////////// START OF SCROLL BARS STYLES IN THE WHOLE APP //////////*/
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--maastricht-blue);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--light-green);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--light-green);
+}
+
+body *::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+body *::-webkit-scrollbar-track {
+  background: var(--maastricht-blue);
+}
+
+body *::-webkit-scrollbar-thumb {
+  background: var(--light-green);
+  border-radius: 5px;
+}
+
+body *::-webkit-scrollbar-thumb:hover {
+  background: var(--lighter-green);
+}
+
+/*////////// END OF SCROLL BARS STYLES IN THE WHOLE APP //////////*/
+
+.player-search-modal {
+  z-index: 1220 !important;
+  padding-right: 0 !important;
+  top: 76px;
+}
+
+body:has(.modal-favourites-loader) {
+  overflow: hidden;
+}
+
+.modal-favourites-loader {
+  --maastricht-blue: 3, 24, 58;
+  position: fixed;
+  top: 50%;
+  z-index: 999;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(var(--maastricht-blue), 0.8);
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .react-loading-skeleton {
+    animation: loading-animation-behaviour 1.5s ease-in-out 0.5s infinite;
+}
+
+@keyframes loading-animation-behaviour {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+
+@media (min-width: 992px) {
+  .header-navlinks-modal-backdrop.not-twist-pages,
+  .header-navlinks-modal-backdrop {
+    opacity: 1 !important;
+    background-color: var(--catalina-blue) !important;
+    margin-block-start: 157px;
+  }
+
+  .header-navlinks-modal.not-twist-pages.show,
+  .header-navlinks-modal.show {
+    margin-block-start: 70px; /*157 previous value*/
+    overflow-y: scroll !important;
+  }
+
+  .header-navlinks-modal-backdrop.not-twist-pages,
+  .header-navlinks-modal.not-twist-pages.show {
+    margin-block-start: 77px;
+  }
+  .player-search-modal {
+    top: 0;
+  }
+}

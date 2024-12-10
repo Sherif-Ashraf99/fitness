@@ -1,0 +1,98 @@
+.media-options {
+  grid-column: 3 / span 2;
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+  width: 80%;
+}
+
+.media-options > div {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 6px;
+  max-width: 8rem;
+}
+
+.media-options div:first-child {
+  max-width: 15rem;
+}
+
+html:lang(en) .media-options > div {
+  direction: rtl;
+}
+
+.media-options {
+  margin-block: 1rem;
+  display: flex;
+}
+
+.media-options .list {
+  width: 53px;
+  object-fit: contain;
+}
+
+.all-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1/-1;
+}
+
+@media (max-width: 991.98px) {
+  .all-options :global(.section-title) {
+    width: 25%;
+  }
+
+  html:lang(ar) .media-options > div {
+    min-width: 6rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .all-options {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .media-options {
+    width: 100%;
+    margin-block-start: 0;
+  }
+
+  .all-options :global(.section-title) {
+    width: max-content;
+  }
+
+  .media-options .list-down {
+    margin-inline-end: 5px;
+  }
+
+  .media-options > div img {
+    margin-inline-start: 5px;
+    object-fit: contain;
+  }
+
+  html:lang(ar) .media-options > div {
+    min-width: 6rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html:lang(ar) .media-options > div {
+    min-width: 5rem;
+  }
+
+  .media-options div:last-child {
+    max-width: 15rem;
+  }
+
+  .media-options > div img {
+    width: 25px;
+  }
+}

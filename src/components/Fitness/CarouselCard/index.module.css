@@ -1,0 +1,40 @@
+.fitness-carousel-card{
+    background-color:black;
+    margin: 7px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.fitness-carousel-card a {
+    color: var(--light-green);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 5px;
+    transition: all 300ms;
+}
+
+.fitness-carousel-card a:hover{
+    color: var(--lighter-green);
+}
+
+.fitness-carousel-card div p {
+    color: var(--chinese-silver);
+}
+
+.fitness-carousel-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-inline: 1rem;
+}
+
+@media (max-width:767px) {
+    .fitness-carousel-card h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .fitness-carousel-card p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,39 @@
+.gym-workout-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gym-workout-page h1 {
+    margin-block:3rem ;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.gym-workout-page .cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.gym-workout-page .cards-container .card-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 31%;
+}
+
+@media (max-width:990px) {
+    .gym-workout-page .cards-container .card-wrapper {
+        width: 48%;
+
+    }
+}
+
+@media (max-width:767px) {
+    .gym-workout-page .cards-container .card-wrapper {
+        width: 100%;
+    }
+}

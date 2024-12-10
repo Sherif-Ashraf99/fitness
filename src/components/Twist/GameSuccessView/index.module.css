@@ -1,0 +1,37 @@
+.success-conatiner {
+  max-width: 90%;
+  min-width: 50%;
+  margin: auto;
+  background: url("src/assets/images/Twist/success_view@2x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.success-conatiner span {
+  color: var(--navy-blue);
+  font-size: clamp(12px,2vw,40px);
+  text-align: center;
+  padding-right: 2%;
+  font-weight: bolder;
+}
+
+.success-conatiner span:first-child {
+  padding-top: 15vw ;
+}
+
+.success-conatiner span:last-child {
+  padding-bottom: 15vw;
+}
+
+@media (max-width:767px) {
+    
+  .success-conatiner span {
+    font-size:20px;
+  }
+
+  .success-conatiner{
+      min-height:250px ;
+  }
+}
+

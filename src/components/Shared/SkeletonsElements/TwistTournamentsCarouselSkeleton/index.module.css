@@ -1,0 +1,74 @@
+.twist-tournaments-carousel-skeleton,
+.twist-tournaments-carousel-skeleton.horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: calc(60 * var(--resizing-xd-ratio));
+  background-color: var(--oxford-blue);
+  padding: calc(60 * var(--resizing-xd-ratio))
+    calc(100 * var(--resizing-xd-ratio));
+}
+
+.twist-tournaments-carousel-skeleton.horizontal {
+  background-color: transparent;
+  column-gap: calc(30 * var(--resizing-xd-ratio));
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.twist-tournaments-carousel-skeleton > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  row-gap: calc(12 * var(--resizing-xd-ratio));
+}
+
+.twist-tournaments-carousel-skeleton.horizontal > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  column-gap: calc(12 * var(--resizing-xd-ratio));
+}
+
+.twist-tournaments-carousel-skeleton > div div {
+  margin-block-end: calc(15 * var(--resizing-xd-ratio));
+}
+
+.twist-tournaments-carousel-skeleton > div div {
+  display: flex;
+  width: calc(60 * var(--resizing-xd-ratio));
+  height: calc(60 * var(--resizing-xd-ratio));
+  margin-block-end: 0;
+}
+
+.twist-tournaments-carousel-skeleton > div div > span {
+  display: flex;
+  flex-grow: 1;
+}
+
+.twist-tournaments-carousel-skeleton > div span {
+  width: 100%;
+}
+
+.twist-tournaments-carousel-skeleton.horizontal > div > span {
+  width: calc(135 * var(--resizing-xd-ratio));
+  height: calc(35 * var(--resizing-xd-ratio));
+}
+
+@media (max-width: 991.98px) {
+  .twist-tournaments-carousel-skeleton > div div {
+    width: calc(120 * var(--resizing-xd-ratio));
+    height: calc(120 * var(--resizing-xd-ratio));
+  }
+}
+
+
+@media (max-width: 575.98px) {
+  .twist-tournaments-carousel-skeleton > div div {
+    width: 48px;
+    height: 48px;
+  }
+}

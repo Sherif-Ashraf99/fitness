@@ -1,0 +1,188 @@
+.FootballMinuteByMinute {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.FootballMinuteByMinute div {
+  display: flex;
+  height: 97px;
+  padding: 12px 20px;
+  justify-content: start;
+  align-items: center;
+  gap: 53px;
+  border-radius: 8px;
+  background: #162e55;
+  font-family: "Norsal-Light";
+  font-weight: 300;
+}
+.FootballMinuteByMinute div h4 {
+  font-family: "Norsal-Medium";
+  font-weight: 500;
+}
+.FootballMinuteByMinute .start {
+  display: flex;
+  height: 129px;
+  padding: 12px 20px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: linear-gradient(
+    92deg,
+    rgba(7, 102, 173, 0.32) -1.39%,
+    rgba(41, 173, 178, 0.32) 99.77%
+  );
+}
+.FootballMinuteByMinute .playerChange {
+  height: 117px;
+}
+.FootballMinuteByMinute .playerChangeIcon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-inline: 0px;
+  padding-bottom: 25px;
+}
+.FootballMinuteByMinute .playerInnerChangeIcon {
+  margin-inline: 34px;
+}
+.FootballMinuteByMinute .card {
+  gap: 35px;
+  height: 139px;
+}
+.FootballMinuteByMinute .goal {
+  height: 271px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: linear-gradient(
+    93deg,
+    rgba(7, 102, 173, 0.32) 1.68%,
+    rgba(0, 255, 135, 0.32) 39.91%
+  );
+}
+.FootballMinuteByMinute .goal div:nth-child(3) {
+  gap: 8px;
+  justify-content: center;
+}
+.FootballMinuteByMinute .goalDetailsContainer {
+  display: flex;
+  width: 100%;
+  height: 106px;
+  padding: 0px 8px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+  background: var(--o-white-30016, rgba(255, 255, 255, 0.16));
+}
+.FootballMinuteByMinute .goalDetails {
+  background: none;
+  flex-direction: column;
+  gap: 16px;
+}
+.FootballMinuteByMinute .beforeMatch {
+  height: 82px;
+}
+
+@media (max-width: 900px) {
+  .FootballMinuteByMinute .card > img {
+    width: 19.593px;
+    height: 19.593px;
+  }
+  .FootballMinuteByMinute .card div img {
+    width: 26.532px;
+    height: 26.532px;
+  }
+  .FootballMinuteByMinute div {
+    gap: 12px !important;
+    padding: 8px;
+    font-size: 12px;
+  }
+  .FootballMinuteByMinute div h4 {
+    font-size: 14px;
+  }
+  .FootballMinuteByMinute .goal {
+    /* flex-direction: column; */
+    align-items: start;
+    justify-content: center;
+    gap: 25px;
+    height: auto;
+  }
+  .FootballMinuteByMinute .goal div:nth-child(1) {
+    width: 32px;
+    height: 32px;
+  }
+  .FootballMinuteByMinute .goal div:nth-child(3) {
+    height: auto;
+  }
+  .FootballMinuteByMinute .goalDetailsContainer {
+    height: auto;
+  }
+  .FootballMinuteByMinute .goalDetailsContainer > img {
+    width: 44px;
+    height: 55px;
+  }
+  .FootballMinuteByMinute .goalDetails {
+    padding: 12px;
+    height: auto;
+  }
+  .FootballMinuteByMinute .goalDetails span img {
+    width: 10.67px;
+    height: 11.428px;
+  }
+  .FootballMinuteByMinute .start {
+    height: 76px;
+    padding: 8px;
+    gap: 12px;
+  }
+  .FootballMinuteByMinute .card {
+    height: auto;
+  }
+  .FootballMinuteByMinute .playerChange {
+    height: auto;
+  }
+  .FootballMinuteByMinute .playerChange div:nth-child(3) {
+    padding: 8px;
+    height: auto;
+    background: none;
+  }
+  .FootballMinuteByMinute .playerChange div:nth-child(3) div:nth-child(2) {
+    padding: 0px;
+    height: auto !important;
+    gap: 8px !important;
+  }
+  .FootballMinuteByMinute .playerChange div:nth-child(3) div:nth-child(2) div {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .FootballMinuteByMinute
+    .playerChange
+    div:nth-child(3)
+    div:nth-child(2)
+    div
+    img {
+    height: 15px;
+  }
+  .FootballMinuteByMinute .playerChange div:nth-child(3) div:nth-child(3) {
+    margin-inline: 5px !important;
+  }
+  .FootballMinuteByMinute .playerChange .playerChangeimg {
+    width: 20px;
+    height: 20px;
+  }
+  .FootballMinuteByMinute .playerChangeIcon img {
+    width: 25px;
+    height: 25px;
+  }
+  .FootballMinuteByMinute .playerInnerChangeIcon {
+    margin-inline: unset;
+  }
+  .FootballMinuteByMinute .playerChangeIcon {
+    padding-bottom: 33px;
+  }
+  .FootballMinuteByMinute .beforeMatch {
+    height: 48px;
+  }
+}

@@ -1,0 +1,5 @@
+.match-card-loader {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-block-start: 43px;
+}

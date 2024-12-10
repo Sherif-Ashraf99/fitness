@@ -1,0 +1,56 @@
+.twist-match-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--oxford-blue);
+    height: calc(485 * var(--resizing-xd-ratio));
+    border-radius: 6px;
+    column-gap: calc(315 * var(--resizing-xd-ratio));
+}
+
+.twist-match-header>div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: calc(50 *var(--resizing-xd-ratio));
+}
+
+.twist-match-header>div:last-child {
+    justify-content: flex-start;
+}
+
+.twist-match-header>div:last-child>div {
+    order: 2;
+}
+
+
+.twist-match-header>div>div {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: .75rem;
+}
+
+.twist-match-header>div>div>span:first-child>span {
+    width: calc(100 *var(--resizing-xd-ratio));
+    height: calc(100 *var(--resizing-xd-ratio));
+}
+
+.twist-match-header>div>span {
+    width: calc(100 *var(--resizing-xd-ratio));
+    height: calc(100 *var(--resizing-xd-ratio));
+    margin-block-start: 1rem;
+}
+
+
+@media (max-width: 575.98px) {
+    .twist-match-header {
+        height: 275px;
+        gap: 20px;
+    }
+
+    .twist-match-header>div>div>span:first-child>span , .twist-match-header>div>span {
+        width: 50px;
+        height: 50px;
+    }
+}

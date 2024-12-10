@@ -1,0 +1,20 @@
+.notFound{
+    --light-blue : 3, 24, 58;
+    background-color: rgba(var(--light-blue),0.74);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    width: 90%;
+    margin: auto;
+    border-radius: 6px;
+}
+
+
+@media (max-width: 991.98px) {
+.notFound{
+ width: 100%;
+}   
+}
+          

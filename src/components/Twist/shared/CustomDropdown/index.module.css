@@ -1,0 +1,76 @@
+.filters-dropdown {
+    width: 210px;
+}
+
+.filters-dropdown>button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    border-color: var(--catalina-blue);
+    width: 100%;
+}
+
+.filters-dropdown :global(.btn:first-child:active),
+.filters-dropdown :global(.btn.show),
+.filters-dropdown> :global(.btn:hover) {
+    color: var(--catalina-blue);
+    background-color: var(--white);
+    border-color: var(--light-green);
+}
+
+.filters-dropdown>div :global(.dropdown-item) {
+        text-overflow: ellipsis;
+        overflow: hidden;
+}
+
+.filters-dropdown>div :global(.dropdown-item:hover) {
+    color: var(--catalina-blue);
+    background-color: var(--light-green);
+}
+
+.filters-dropdown>button>span {
+    font-weight: bold;
+    color: var(--catalina-blue);
+}
+
+.filters-dropdown>button svg {
+    color: var(--light-green);
+}
+
+.filters-dropdown>button:global(.show) svg {
+    transform: rotate(180deg);
+}
+
+.filters-dropdown>button::after {
+    display: none;
+}
+
+.filters-dropdown>:global(div.show) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters-dropdown>:global(div.show) a {
+    text-align: start;
+}
+
+@media (max-width: 575.98px) {
+    .filters-dropdown {
+        width: 180px;
+    }
+    .filters-dropdown > button > span {
+        font-size: 14px;
+    }  
+}
+
+
+@media (max-width: 360px) {
+    .filters-dropdown {
+        width: 165px;
+    }
+    .filters-dropdown >button >span {
+        font-size: 12px;
+    }
+}

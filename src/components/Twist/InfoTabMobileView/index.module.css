@@ -1,0 +1,76 @@
+
+
+@media (max-width: 767.98px) {
+
+  .awards-mobile {
+    margin-block-start: 20px;
+  }
+
+  .awards-mobile :global(.accordion-item) {
+    margin-block-end: 10px;
+    text-align: center;
+  }
+
+
+  .awards-mobile :global(.accordion-item),
+  .awards-mobile :global(.accordion-button) {
+    background-color: var(--maastricht-blue);
+    color: var(--white);
+    box-shadow: unset;
+    border: none;
+    border-radius: 6px;
+  }
+
+  .awards-mobile :global(.accordion-button::after) {
+    margin-inline: auto 0;
+    background-image: url("src/assets/images/Twist/chevron-down.svg");
+  }
+
+  :global(.al-ahly) .awards-mobile :global(.accordion-item),
+  :global(.al-ahly)  .awards-mobile :global(.accordion-button) {
+    background-color: var(--light-black);
+  }
+
+
+  :global(.al-ahly) .awards-mobile :global(.accordion-button::after) {
+    background-image: url("src/assets/images/Twist/arrowInfo-ahly.svg");
+  }
+
+  .awards-mobile .awards-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .awards-mobile .tournament-title-mob {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .awards-mobile .tournament-title-mob .tournament-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .awards-mobile .tournament-title-mob .tournament-logo img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .info-tab .main-section {
+    padding: 1rem 2rem;
+  }
+
+  .info-tab .main-section div h3,
+  .info-tab .main-section div h4 {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,84 @@
+.teams-carousel {
+  margin-block-end: 1rem;
+  z-index: 1200;
+  position: relative;
+  top: 75px;
+}
+
+.teams-carousel.scroll-toggle {
+  --bg-gradiant-1: 3, 25, 59;
+  position: fixed;
+  width: 100%;
+  top: 76px !important;
+  z-index: 1100;
+  animation: toggle 400ms linear 0s 1 forwards;
+  background: rgba(var(--bg-gradiant-1), 0.5);
+  backdrop-filter: blur(10px);
+}
+body :has(:global(.opend-header-nav)) .teams-carousel,
+body :has(:global(.opend-header-nav)) .teams-carousel.scroll-toggle {
+  background-color: var(--catalina-blue) !important;
+}
+
+@keyframes toggle {
+  from {
+    top: -77px;
+    opacity: 0;
+  }
+  to {
+    top: 77px;
+    opacity: 1;
+  }
+}
+
+.teams-loader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.teams-loader span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.teams-carousel :global(.slick-slider)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 100%;
+  border-bottom: 1px solid var(--light-green);
+}
+
+.teams-carousel img {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+@media (min-width: 992px) {
+  .teams-carousel {
+    z-index: 1100;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .teams-carousel :global(.container) {
+    padding-inline: 0px;
+  }
+
+  .teams-carousel > div {
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .teams-carousel.match-page-mobile {
+    display: none;
+  }
+}

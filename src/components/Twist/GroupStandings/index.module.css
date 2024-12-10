@@ -1,0 +1,75 @@
+.ranking-wrapper {
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.ranking-card {
+	width: calc(50% - 30px);
+	border-radius: 6px;
+	padding: 20px;
+	background-color: var(--cool-black);
+
+}
+
+.ranking-card table {
+	margin-block-end: 0;
+	font-family: 'Norsal-Medium';
+	font-weight: 500;
+	color: var(--white);
+	font-size: 16px;
+}
+
+.ranking-card table tbody td:not(:first-child),
+.ranking-card table thead tr th:not(:first-child) {
+	text-align: center;
+}
+
+.ranking-card table tbody td {
+	cursor: pointer;
+}
+
+.group-name {
+	color: var(--white);
+	display: flex;
+	gap: 5px;
+	border-block-end: 1px solid var(--white);
+	padding-block-end: 15px;
+	font-family: 'Norsal-SemiBold';
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.team-info {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.team-info > :last-child {
+	font-size: 18px;
+}
+
+.team-info img {
+	width: 30px;
+	height: 30px;
+}
+
+@media (max-width: 991.99px) {
+	.ranking-card {
+		width: 100%;
+	}
+
+	.group-name {
+		font-size: 17px;
+	}
+	.team-info > :last-child , .ranking-card table {
+		font-size: 14px;
+	}
+	
+	.team-info img {
+		width: 20px;
+		height: 20px;
+	}
+	}

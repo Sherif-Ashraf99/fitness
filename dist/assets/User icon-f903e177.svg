@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49">
+  <g id="User_icon" data-name="User icon" transform="translate(-0.279 -0.279)">
+    <circle id="Ellipse_510" data-name="Ellipse 510" cx="24.5" cy="24.5" r="24.5" transform="translate(0.279 0.279)" fill="#fff"/>
+    <path id="Icon_awesome-user-circle" data-name="Icon awesome-user-circle" d="M23.358.563A23.358,23.358,0,1,0,46.716,23.92,23.354,23.354,0,0,0,23.358.563Zm0,9.042a8.288,8.288,0,1,1-8.288,8.288A8.288,8.288,0,0,1,23.358,9.6Zm0,32.4a18.048,18.048,0,0,1-13.8-6.423,10.5,10.5,0,0,1,9.277-5.632,2.3,2.3,0,0,1,.669.1,12.47,12.47,0,0,0,3.852.65,12.423,12.423,0,0,0,3.852-.65,2.3,2.3,0,0,1,.669-.1,10.5,10.5,0,0,1,9.277,5.632A18.048,18.048,0,0,1,23.358,42Z" transform="translate(1.557 0.995)" fill="#052f73"/>
+  </g>
+</svg>

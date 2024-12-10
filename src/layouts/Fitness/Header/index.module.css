@@ -1,0 +1,25 @@
+.navbar {
+  background-color: var(--off-white);
+  overflow-x: auto;
+  /* margin-top: 76px; */
+}
+
+.navlink {
+  display: flex;
+  align-items: center;
+  color: var(--catalina-blue);
+  font-weight: 600;
+}
+
+.current-active-tab {
+  color: var(--light-green) !important;
+}
+
+.navlink:global(.nav-link.active) {
+  color: var(--catalina-blue);
+}
+
+.navlink:global(.nav-link.active):hover,
+.navlink:hover {
+  color: var(--light-green);
+}

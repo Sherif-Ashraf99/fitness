@@ -1,0 +1,35 @@
+.bread-crumbs{
+    color:var(--chinese-silver);
+}
+
+.bread-crumbs .segment {
+    text-wrap: nowrap;
+}
+
+.bread-crumbs .segment:hover{
+    color:var(--light-green);
+    cursor: pointer;
+}
+
+.bread-crumbs .segment.active-segment {
+    color:var(--light-green);
+    cursor: default;
+}
+
+.skeleton{
+    height: 30px;
+}
+
+
+@media (max-width:756px) {
+    .bread-crumbs .segment{
+        font-size: 14px;
+    }
+
+    .bread-crumbs .segment.active-segment {
+        color:var(--light-green);
+        cursor: default;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+    }
+}

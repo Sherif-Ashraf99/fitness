@@ -1,0 +1,93 @@
+.top-tournaments-carousel :global(.swiper) {
+  background-color: var(--cool-black);
+  border-radius: 6px;
+  min-height: 150px;
+}
+
+.top-tournaments-carousel :global(.swiper-pagination-bullet-active) {
+  background-color: var(--light-green);
+  padding: 5px;
+}
+
+.top-tournaments-carousel :global(.swiper-pagination-bullet) {
+  background-color: var(--light-green);
+  padding: 5px;
+  margin-block: 50px;
+}
+
+.league {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.league .img-league {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 10px;
+}
+
+.league .img-league img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.league h3 {
+  color: var(--white);
+  font-size: 14px;
+}
+
+.top-tournaments-carousel :global(.swiper-button-prev),
+.top-tournaments-carousel :global(.swiper-button-next) {
+  background-color: var(--maastricht-blue) !important;
+  color: var(--white);
+  border-radius: 6px;
+  height: 100%;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+}
+
+.top-tournaments-carousel :global(.swiper-wrapper) {
+  width: 100vw;
+}
+
+.top-tournaments-carousel :global(.swiper-button-prev) {
+  right: 0 !important;
+}
+
+.top-tournaments-carousel :global(.swiper-button-prev)::after,
+.top-tournaments-carousel :global(.swiper-button-next)::after {
+  font-size: 16px !important;
+  transition: 0.3s all ease-in-out;
+}
+
+.top-tournaments-carousel :global(.swiper-button-prev):hover,
+.top-tournaments-carousel :global(.swiper-button-next):hover {
+  color: var(--light-green);
+}
+
+.top-tournaments-carousel :global(.swiper-wrapper) {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 991.98px) {
+  .top-tournaments-carousel :global(.swiper-button-prev),
+  .top-tournaments-carousel :global(.swiper-button-next) {
+    display: none;
+  }
+
+  .top-tournaments-carousel :global(.swiper-wrapper) {
+    justify-content: flex-start;
+  }
+}

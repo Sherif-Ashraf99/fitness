@@ -1,0 +1,73 @@
+.matchStatistics h5 {
+  font-family: "Norsal-Medium";
+  font-weight: 500;
+}
+.matchStatistics .header {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 16px 16px 0px 0px;
+  border-bottom: 0.5px solid #fff;
+  background: var(--o-white-30016, rgba(255, 255, 255, 0.16));
+  height: 62px;
+}
+.matchStatistics .header div {
+  flex: 1 1 0;
+  text-align: center;
+}
+.matchStatistics .header div:nth-child(1) span,
+.matchStatistics .header div:nth-child(3) span {
+  font-size: 14px;
+  font-family: "Norsal-Bold";
+  font-weight: 700;
+}
+.matchStatistics .header div:nth-child(2) span {
+  font-size: 20px;
+  font-family: "Norsal-Bold";
+  font-weight: 700;
+}
+
+.matchStatistics div:nth-child(2) span:nth-child(1),
+.matchStatistics div:nth-child(2) span:nth-child(3) {
+  font-size: 20px;
+  font-family: "Norsal-Bold";
+  font-weight: 700;
+}
+.matchStatistics div:nth-child(2) span:nth-child(2) {
+  font-size: 16px;
+  font-family: "Norsal-Medium";
+  font-weight: 500;
+}
+.matchStatistics .body div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 65px;
+}
+.matchStatistics .body div span {
+  flex: 1 1 0;
+  text-align: center;
+}
+.matchStatistics .body div:nth-child(odd) {
+  background: var(--o-white-30016, rgba(255, 255, 255, 0.08));
+}
+
+@media (max-width: 600px) {
+  .matchStatistics .header {
+    justify-content: space-around;
+  }
+  .matchStatistics .header div {
+    flex: none;
+  }
+  .matchStatistics .body div {
+    height: 45px;
+  }
+  .matchStatistics div:nth-child(2) span:nth-child(2) {
+    font-size: 14px;
+    font-family: "Norsal-Medium";
+    font-weight: 500;
+  }
+  .title {
+    display: none;
+  }
+}

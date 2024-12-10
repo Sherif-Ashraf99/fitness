@@ -1,0 +1,16 @@
+.load-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .75rem auto auto;
+    color: var(--light-green);
+    font-weight: bold;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    opacity: 1;
+}
+
+:global(.al-ahly) .load-more {
+    color: var(--light-black);
+}

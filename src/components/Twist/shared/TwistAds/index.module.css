@@ -1,0 +1,23 @@
+.Ads {
+    grid-column: 1/-1
+}
+
+.media-ads {
+    margin: 2rem auto;
+    background: #042967;
+    height: 350px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.media-ads h5{
+font-size: 25px;
+}
+
+@media (max-width: 991.98px) {
+.media-ads {
+ height: 250px;
+}  
+}

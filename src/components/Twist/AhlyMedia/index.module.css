@@ -1,0 +1,48 @@
+.ahly-media {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+.statistics {
+  display: grid;
+  grid-column: 1/2;
+  grid-template-columns: 1fr;
+}
+
+.media {
+  display: grid;
+  grid-column: 2/4;
+  grid-row: 1/3;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+}
+
+.ahly-media .media :global(.load-more) {
+  color: var(--light-black) !important;
+}
+
+.ahly-media .media :global(p.card-date) {
+  color: var(--white) !important;
+}
+
+.ahly-media .media h3 {
+  color: var(--light-black) !important;
+}
+
+.ahly-media .media :global(.media-card-global span.card-tag) {
+  background-color: var(--white) !important;
+  color: var(--maastricht-blue);
+}
+
+@media (max-width: 991px) {
+  .statistics {
+    grid-column: 1/-1;
+  }
+
+  .media {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+  }
+}

@@ -1,0 +1,9 @@
+.top-tournaments {
+  grid-column: 1/-1;
+}
+
+.header-tournaments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,33 @@
+.ask-ali-banner {
+  grid-column: 1/2;
+  border-radius: 20px;
+  height: 250px;
+  padding: 2rem;
+  background: url("src/assets/images/Fitness/askAliImg.png") no-repeat;
+  background-size: cover;
+  background-position: top;
+  /* background-position: 20% top; */
+  opacity: 0.9;
+}
+
+.ask-ali-banner a {
+  color: var(--light-green);
+  padding-block: 1rem;
+  text-decoration: none !important;
+  font-weight: 600;
+  transition: all 300ms;
+}
+
+.ask-ali-banner a svg:lang(en) {
+  rotate: 180deg;
+}
+
+.ask-ali-banner a:hover {
+  color: var(--lighter-green);
+  translate: -10px;
+}
+
+.ask-ali-banner a:hover:lang(en) {
+  color: var(--lighter-green);
+  translate: 10px;
+}

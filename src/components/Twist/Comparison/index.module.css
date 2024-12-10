@@ -1,0 +1,117 @@
+.comparison {
+    grid-column: 1/-1;
+    color: var(--white);
+}
+
+
+.comparison-wrapper {
+    position: relative;
+}
+
+.comparison-img {
+    background-image: url('src/assets/images/Twist/comparison.png');
+    background-repeat: no-repeat;
+    background-position: center 78%;
+    background-size: cover;
+    mix-blend-mode: luminosity;
+    height: 600px;
+    text-align: center;
+    padding: 15px;
+}
+
+.comparison-desc {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.comparison-link {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    position: absolute;
+    background-color: var(--white);
+    font-weight: bolder;
+    border-radius: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    text-decoration: none;
+}
+
+.home-btn {
+    bottom: 10px;
+    left: 130px;
+}
+
+.home-p {
+    width: 40%;
+    font-size: 20px;
+    text-align: start;
+}
+
+
+.comparison-link img {
+    width: 2.75rem;
+    height: 2.75rem;
+}
+
+.comparison-link span {
+    color: var(--catalina-blue);
+    font-weight: bold;
+    padding-inline-start: 0.5rem;
+}
+
+@media (max-width: 1199.98px) {
+    .comparison-desc {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    
+    .comparison-wrapper .comparison-img {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .comparison-wrapper .comparison-img .home-p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .comparison-desc {
+        font-size: 20px;
+    }
+    .comparison-wrapper .home-btn{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+
+
+}
+
+@media (max-width: 575.98px) {
+
+     .comparison-img  {
+        height: 600px !important;
+    }
+
+    .comparison-wrapper  .comparison-img {
+        padding: 10px;
+    }
+
+    .comparison-wrapper .comparison-img .home-p,
+    .comparison-wrapper .comparison-desc {
+        font-size: 20px;
+    }
+
+    .comparison-wrapper .comparison-link {
+        padding: 0.4rem 0.8rem;
+    }
+
+   
+}

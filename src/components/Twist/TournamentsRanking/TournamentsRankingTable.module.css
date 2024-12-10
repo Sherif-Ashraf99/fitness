@@ -1,0 +1,78 @@
+.ranking-table {
+  height: 100%;
+}
+
+.ranking-table a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 0.5rem;
+  text-decoration: none;
+}
+
+.ranking-table a span {
+  color: var(--main-chinese-silver);
+}
+
+.ranking-table a svg {
+  color: var(--light-green);
+}
+
+.ranking-table table {
+  background-color: var(--cool-black);
+  cursor: pointer;
+  color: var(--white);
+  margin-block-start: 15px;
+  margin-block-end: 0;
+  border-radius: 6px;
+}
+
+.ranking-table :global(.table-hover > tbody > tr:hover > *) {
+  --bs-table-accent-bg: var(--light-green);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.ranking-table > table thead tr th,
+.ranking-table > table tbody tr td {
+  font-size: 15px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ranking-table > table thead tr th:first-child,
+.ranking-table > table tbody tr td:first-child {
+  text-align: start;
+}
+
+.ranking-table > table tbody tr:nth-child(odd) {
+  --maastricht-blue: 3, 24, 58;
+  background-color: rgba(var(--maastricht-blue), 0.5);
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.team-info img {
+  margin-inline: 10px;
+}
+
+
+@media (max-width: 991.98px) {
+  .ranking-table,
+  .ranking-table > table,
+  .ranking-table > table thead tr th,
+  .ranking-table > table tbody tr td {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ranking-table > table thead tr th,
+  .ranking-table > table tbody tr td {
+    padding: 10px;
+  }
+}

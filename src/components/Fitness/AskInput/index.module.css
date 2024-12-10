@@ -1,0 +1,122 @@
+.ask {
+    grid-column: 1/-1;
+    background-color: var(--dark-navy-blue);
+}
+
+.ask>div {
+    display: flex;
+}
+
+.ask .input-section {
+    width: 50%;
+    padding: 3rem;
+}
+
+.ask .question-asked {
+    background-color: var(--light-green);
+    height: min-content;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    width: fit-content;
+    margin-top: 3rem;
+}
+
+.ask .input-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ask .input-section form label {
+    color: var(--light-grey);
+    font-size: 20px;
+    padding-block: 1rem;
+}
+
+.ask .input-section form textarea {
+    border: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: var(--white-10-opacity);
+    height: 160px;
+    min-height: 100px;
+    max-height: 200px;
+    white-space: wrap;
+    padding-block-end: 3rem;
+    color: var(--light-grey);
+    outline: none;
+    padding: 10px;
+}
+
+.ask .input-section form div {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: var(--light-grey);
+    background-color: var(--white-10-opacity);
+    text-align: center;
+    margin-block-end: 1rem;
+    padding-block-end: 1rem;
+    font-size: 14px;
+}
+
+.ask .input-section form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.ask .input-section form button {
+    border-radius: 50px;
+    border: none;
+    background-color: var(--light-green);
+    color: var(--light-grey);
+    padding-block: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ask .img-section {
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ask .img-section img {
+    width: 70%;
+    object-fit: contain;
+}
+
+.ask p {
+    text-align: center;
+    color: var(--light-grey);
+    width: 50%;
+    margin: 1rem auto;
+}
+
+@media (max-width:767px) {
+    .ask>div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ask .img-section {
+        width: 80%;
+        padding: 0rem;
+    }
+
+    .ask .input-section {
+        order: 2;
+        width: 100%;
+        padding-block-start: 0rem;
+        padding-inline: 1rem;
+    }
+
+    .ask .input-section form button {
+        margin-block-start: 1rem;
+    }
+
+    .ask p {
+        min-width: 200px;
+    }
+}

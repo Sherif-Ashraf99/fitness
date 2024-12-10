@@ -1,0 +1,33 @@
+.main-layout {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.main-layout main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  overflow: hidden;
+}
+
+.main-layout main[data-current-page="transfer-seasons-page"] {
+  top: 2%;
+}
+/* .main-layout main.home-page {
+  top: 160px;
+} */
+
+@media (max-width: 575.98px) {
+  .main-layout main > div:global(.container) {
+    max-width: calc(100vw - 24px);
+    padding-inline: 12px;
+  }
+
+  main.home-page {
+    top: 76px;
+  }
+}

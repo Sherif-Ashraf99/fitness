@@ -1,0 +1,48 @@
+.elahly-banner {
+  grid-column: 1/-1;
+  position: relative;
+}
+
+.elahly-banner img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.elahly-banner-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.elahly-banner-data h2 {
+  color: var(--white);
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 3rem);
+  margin-block-end: 50px;
+}
+
+.elahly-banner-data a {
+  width: fit-content;
+  color: var(--white);
+  font-size: clamp(0.7rem, 1.5vw, 1.8rem);
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  padding-inline: 10px;
+  background-color: var(--light-green);
+  font-weight: 500;
+  transition: all 300ms;
+  text-decoration: none;
+}
+
+.elahly-banner-data button:hover {
+  background-color: var(--lighter-green);
+}

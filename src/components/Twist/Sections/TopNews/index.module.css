@@ -1,0 +1,54 @@
+.main-media-carousel-loader {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+  height: 25rem;
+}
+
+.main-media-carousel-loader > div:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.main-media-carousel-loader > div:nth-child(2) {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.main-media-carousel-loader > div:nth-child(3) {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.main-media-carousel-loader > div:last-child {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+}
+
+@media (max-width: 991.98px) {
+  .main-media-carousel-loader {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .main-media-carousel-loader > div:first-child {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .main-media-carousel-loader > div:nth-child(2) {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .main-media-carousel-loader > div:nth-child(3) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+  }
+
+  .main-media-carousel-loader > div:last-child {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+  }
+}

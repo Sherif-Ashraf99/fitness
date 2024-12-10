@@ -1,0 +1,66 @@
+.UserNumberInput {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.UserNumberInput img {
+  width: 20%;
+}
+
+.UserNumberInput form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.UserNumberInput label{
+  width: 100%;
+  font-size: 18px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.UserNumberInput label input {
+  width: 40%;
+  height: 40px;
+  border-radius:5px;
+  text-align: center;
+}
+
+.UserNumberInput button {
+  border:none;
+  width: 40%;
+  height: 40px;
+  border-radius:5px;
+  text-align: center;
+  color:var(--white) ;
+  background-color: var(--lighter-green);
+  transition: all 300ms;
+}
+
+
+.UserNumberInput button:disabled {
+  background-color: var(--light-green);
+}
+
+
+@media (max-width:768px) {
+  .UserNumberInput label input {
+    width: 90%;
+  }
+
+  .UserNumberInput button {
+    width: 90%;
+  }
+}

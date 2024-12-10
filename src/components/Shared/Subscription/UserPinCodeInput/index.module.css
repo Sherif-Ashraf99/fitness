@@ -1,0 +1,66 @@
+.UserPinCodeInput {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.UserPinCodeInput img {
+  width: 20%;
+}
+
+.UserPinCodeInput form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.UserPinCodeInput label{
+  width: 100%;
+  font-size: 18px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.UserPinCodeInput label input {
+  width: 40%;
+  height: 40px;
+  border-radius:5px;
+  text-align: center;
+}
+
+.UserPinCodeInput button {
+  border:none;
+  width: 40%;
+  height: 40px;
+  border-radius:5px;
+  text-align: center;
+  color:var(--white) ;
+  background-color: var(--lighter-green);
+  transition: all 300ms;
+}
+
+
+.UserPinCodeInput button:disabled {
+  background-color: var(--light-green);
+}
+
+
+@media (max-width:768px) {
+  .UserPinCodeInput label input {
+    width: 90%;
+  }
+
+  .UserPinCodeInput button {
+    width: 90%;
+  }
+}

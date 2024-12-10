@@ -1,0 +1,88 @@
+.ahly-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.ahly-gallery h2 {
+  color: var(--light-black);
+  font-size: 24px;
+  font-weight: 600;
+  margin-block: 1rem;
+}
+
+.ahly-gallery > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  margin-block: 1rem;
+}
+
+.ahly-gallery .album-card-wrapper {
+  width: 32.5%;
+  height: 370px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.ahly-gallery-album {
+  display: flex;
+  flex-direction: column;
+  margin-block: 1rem;
+}
+
+.ahly-gallery-album .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ahly-gallery-album .controls .back-arrow svg {
+  color: var(--light-green);
+  width: 30px;
+  height: 30px;
+  stroke-width: 5px;
+  cursor: pointer;
+}
+
+.album-loader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-block: 1rem;
+}
+
+.album-loader > :global(span) {
+  width: 32%;
+  height: 370px;
+}
+
+.album-loader > :global(span span) {
+  height: 100%;
+  --highlight-color: var(--light-black) !important;
+}
+
+@media (max-width: 768px) {
+  .ahly-gallery .album-card-wrapper {
+    width: 49.5%;
+  }
+
+  .album-loader > :global(span) {
+    width: 48.5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ahly-gallery .album-card-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .album-loader > :global(span) {
+    width: 100%;
+    height: 240px;
+  }
+}

@@ -1,0 +1,76 @@
+.StatisticsTeam {
+  width: calc(100% / 2 - 10px);
+  border-radius: 6px;
+  color: var(--white);
+  padding: 20px;
+  --light-blue: 3, 24, 58;
+  background-color: rgba(var(--light-blue), 0.65);
+}
+
+:global(.al-ahly) .StatisticsTeam {
+  background-color: var(--light-black);
+}
+
+.StatisticsTeam h5 {
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid var(--light-green);
+}
+
+.table-Statistics {
+  margin-block-start: 16px;
+}
+.Statistics-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.table-Statistics tr td {
+  padding: 10px 30px;
+}
+
+.StatisticsTeam table tr:nth-child(odd) {
+  --light-blue: 13, 24, 58;
+  background-color: rgba(var(--light-blue), 0.5);
+}
+
+:global(.al-ahly) .StatisticsTeam table tr:nth-child(odd) {
+  --light-gray: 112, 112, 112;
+  background-color: rgba(var(--light-gray), 0.5);
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: calc(100% / 2 - 10px);
+  position: relative;
+}
+.loader > span {
+  display: flex;
+  width: 25%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  transform: translate(-5%, -5%);
+}
+.loader > div {
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .StatisticsTeam,
+  .loader > :global(span) {
+    width: 100%;
+  }
+  .loader {
+    width: 100%;
+  }
+  .table-Statistics tr td {
+    padding: 10px;
+  }
+}

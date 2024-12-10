@@ -1,0 +1,66 @@
+.twist-match-card-skeleton {
+	--light-grey: 213, 213, 213;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: calc(260 * var(--resizing-xd-ratio));
+	background-color: var(--oxford-blue);
+	padding: calc(22 * var(--resizing-xd-ratio));
+	border-radius: 6px;
+}
+.twist-match-card-skeleton.al-ahly-page {
+	background-color: var(--light-black);
+}
+
+.card-header {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 10px;
+	height: 1.5rem;
+}
+
+.card-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	height: calc(75 * var(--resizing-xd-ratio));
+}
+
+.card-footer > span {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.card-footer > span:not(:nth-child(2)) {
+	width: calc(75 * var(--resizing-xd-ratio));
+	height: calc(75 * var(--resizing-xd-ratio));
+	z-index: 1;
+}
+
+.card-footer > span:nth-child(1) {
+	left: unset;
+	right: 0;
+}
+
+.card-footer > span:nth-child(2) {
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(100% - 75 * var(--resizing-xd-ratio));
+	height: calc(60 * var(--resizing-xd-ratio));
+	margin-inline: auto;
+	z-index: 0;
+}
+
+@media (max-width: 767.98px) {
+	.twist-match-card-skeleton {
+		height: calc(450 * var(--resizing-xd-ratio));
+		padding: calc(30 * var(--resizing-xd-ratio));
+	}
+}

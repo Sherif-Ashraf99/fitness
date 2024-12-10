@@ -1,0 +1,138 @@
+.muscles-workout h1 {
+    text-align: center;
+    margin-block: 1rem;
+}
+
+.muscles-workout>div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.muscles-workout ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-block-end: 0px;
+}
+
+.muscles-workout ul li {
+    background-color: var(--white-10-opacity);
+    padding: 5px 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.muscles-workout ul li.active {
+    background-color: var(--light-grey);
+    color: var(--bg-gradiant-3);
+}
+
+.muscles-workout .content-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* align-content: center; */
+    flex-wrap: wrap;
+    width: 65%;
+    gap: 10px;
+}
+
+.muscles-workout .content-section>div {
+    width: 48%;
+    height: fit-content;
+}
+
+.muscles-workout .body-section {
+    width: 334px;
+    min-width: 334px;
+    position: relative;
+    height: 600px;
+    scale: 0.9;
+}
+
+.muscles-workout .body-section img {
+    position: absolute;
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+.muscles-workout .body-section img:hover {
+    filter: invert(56%) sepia(449%) saturate(3923%) hue-rotate(335deg) brightness(105%) contrast(90%);
+}
+
+.muscles-workout .body-section img.active {
+    filter: invert(56%) sepia(449%) saturate(3923%) hue-rotate(135deg) brightness(105%) contrast(120%);
+}
+
+.muscles-workout .body-section .head {
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.muscles-workout .body-section .head.active,
+.muscles-workout .body-section .head:hover {
+    filter: none;
+}
+
+.muscles-workout .body-section .shoulders {
+    top: 61px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.muscles-workout .body-section .chest {
+    top: 104px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.muscles-workout .body-section .core {
+    top: 122px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.muscles-workout .body-section .legs {
+    top: 256px;
+    left: 50%;
+    transform: translateX(-49%);
+}
+
+.muscles-workout .body-section .right-arm {
+    top: 100px;
+    right: 47px;
+}
+
+.muscles-workout .body-section .left-arm {
+    top: 100px;
+    left: 55px;
+}
+
+@media (max-width:768px) {
+
+    .muscles-workout ul {
+        margin-block-end: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .muscles-workout>div {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .muscles-workout .content-section {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .muscles-workout .content-section div {
+        width: 100%;
+    }
+
+    .muscles-workout .body-section {
+        scale: 0.7;
+    }
+}

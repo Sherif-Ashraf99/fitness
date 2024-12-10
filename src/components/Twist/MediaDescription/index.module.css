@@ -1,0 +1,31 @@
+.media-description h3 {
+    font-size: 24px;
+}
+
+.main-img {
+    position: relative;
+}
+
+.main-img > img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.media-info {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 43%, rgba(0, 0, 0, 0));
+}
+
+.media-info :first-child{
+    color:var(--light-green)
+}
+.media-body {
+    margin-block-start: 20px;
+}
+
+.media-body img{
+   width: 100%;
+}

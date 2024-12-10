@@ -1,0 +1,122 @@
+.info-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-block: 3rem;
+}
+
+.info-tab .main-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 1rem;
+  border-radius: 6px;
+  background-color: var(--light-black);
+}
+
+.info-tab .main-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-inline-end: 2px solid var(--light-green);
+}
+
+.info-tab .main-section div:last-child {
+  border: none;
+}
+
+.info-tab .main-section div h3 {
+  color: var(--pink-swan);
+  font-size: 20px;
+  padding-block: 10px;
+  text-align: center;
+}
+
+.info-tab .main-section div h4 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.info-tab .awards-section {
+  background-color: var(--light-black);
+  margin-block: 2rem;
+  border-radius: 7px;
+  padding-block: 1rem;
+}
+
+.info-tab .awards-section table tbody tr {
+  transition: all 300ms;
+}
+
+.info-tab .awards-section table tbody tr:hover {
+  background-color: var(--white);
+  color: var(--light-black);
+  font-weight: bold;
+}
+
+.info-tab .awards-section table tbody tr:nth-child(odd) {
+  --light-gray: 112, 112, 112;
+  background-color: rgba(var(--light-gray), 0.5);
+  color: var(--white);
+}
+
+.awards-section table thead tr,
+.awards-section table tbody td {
+  text-align: center;
+}
+
+.awards-section table tbody .title-web {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  min-width: max-content;
+  gap: 10px;
+}
+
+.awards-section table tbody .title-web .logo {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.awards-section table tbody .title-web .logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+@media (max-width: 767.98px) {
+  .info-tab .main-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .info-tab .main-section div {
+    width: calc(50% - 10px);
+  }
+
+  .info-tab .main-section div {
+    border: none;
+  }
+
+}
+
+@media (max-width: 575.98px) {
+  .info-tab .main-section {
+    padding: 1rem 2rem;
+  }
+
+  .info-tab .main-section div h3,
+  .info-tab .main-section div h4 {
+    font-size: 1rem;
+  }
+}

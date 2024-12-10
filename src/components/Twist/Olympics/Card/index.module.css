@@ -1,0 +1,191 @@
+.olympics-card {
+	display: grid;
+	grid-template-columns: minmax(80px, 100px) 1fr minmax(80px, 100px);
+	border-radius: 6px;
+	padding-block: 16px 37px;
+	padding-inline: 16px;
+	background-color: var(--cool-black);
+	border: 2px solid var(--navy-blue);
+	font-size: 8px;
+	overflow: hidden;
+	min-height: 260px;
+}
+
+.olympics-card.matchClickable {
+	cursor: pointer;
+	transition: 300ms all;
+}
+
+.olympics-card.matchClickable:hover {
+	border: 2px solid var(--light-green);
+}
+
+.olympics-card > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+}
+.card-status {
+	background-color: var(--light-grey);
+	padding-inline: 1.7em;
+	padding-block: 0.65em;
+	border-radius: 6px;
+	text-align: center;
+	text-transform: capitalize;
+}
+.card-player-info {
+	margin-block-end: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 2.2em;
+}
+.card-player-info img {
+	width: 10em;
+	height: 10em;
+	border-radius: 50%;
+}
+.card-start-part,
+.card-end-part {
+	row-gap: 3em;
+}
+.card-center-part {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	padding-inline: 2em;
+}
+.card-center-part::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: transparent var(--backgroundImg) center center no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.3;
+}
+.card-type,
+.card-location {
+	padding-block: 0.65em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 8px;
+	margin-block-end: 3em;
+}
+.card-location[data-is-single-game='true'] {
+	margin-block-end: 0;
+}
+.card-type img,
+.card-location img {
+	max-width: 3em;
+	max-height: 3em;
+	filter: invert(1);
+}
+
+.card-type img {
+	opacity: 0.5;
+	filter: brightness(0%) invert(1);
+}
+
+.card-type {
+	margin-block-end: 0;
+}
+
+.olympicHomeCalender .card-type {
+	flex-direction: row-reverse;
+}
+
+.card-time {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 1.5em;
+}
+.card-time > div {
+	display: flex;
+	column-gap: 5px;
+	direction: rtl;
+}
+.card-time > div span,
+.card-time > span {
+	font-family: 'Norsal-Bold';
+	font-size: 2.8em;
+	color: var(--white);
+}
+.card-time > div span {
+	font-size: 2.8em;
+}
+.card-time > span {
+	font-size: 5em;
+}
+.card-status,
+.card-type > span,
+.card-location > span,
+.card-player-info figcaption {
+	font-family: 'Norsal-Medium';
+	font-weight: 500;
+	font-size: 1.6em;
+	color: var(--white);
+	text-wrap: nowrap;
+	white-space: nowrap;
+}
+
+.card-status {
+	color: var(--navy-blue);
+}
+
+.card-time  .score-individual-games {
+	font-size: 14px;
+	text-align: center;
+}
+
+
+.liveIcon {
+	width: 60px;
+	height: 60px;
+	animation: flicker infinite 1.2s;
+}
+
+
+.live-time {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	color: var(--white);
+	direction: rtl;
+	font-size: 14px;
+  }
+  
+
+@keyframes flicker {
+	0% {
+	  opacity: 1;
+	}
+  
+	50% {
+	  opacity: 0;
+	}
+  
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+
+@media (max-width: 992px) {
+	.olympics-card {
+		grid-template-columns: minmax(60px, 80px) 1fr minmax(60px, 80px);
+		padding-block: 12px 30px;
+		padding-inline: 12px;
+		font-size: 6px;
+		min-height: auto;
+	}
+}

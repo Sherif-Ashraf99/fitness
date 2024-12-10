@@ -1,0 +1,84 @@
+.teams-section-carousel :global(.swiper) {
+  background-color: var(--cool-black);
+  border-radius: 6px;
+  min-height: 150px;
+}
+
+.teams-section-carousel :global(.swiper-pagination-bullet-active) {
+  background-color: var(--light-green);
+  padding: 5px;
+}
+
+.teams-section-carousel :global(.swiper-pagination-bullet) {
+  background-color: var(--light-green);
+  padding: 5px;
+  margin-block: 50px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.team .img-team {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 10px;
+}
+
+.team .img-team img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team h3 {
+  color: var(--white);
+  font-size: 14px;
+}
+
+.teams-section-carousel :global(.swiper-button-prev),
+.teams-section-carousel :global(.swiper-button-next) {
+  background-color: var(--maastricht-blue) !important;
+  color: var(--white);
+  border-radius: 6px;
+  height: 100%;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+}
+
+.teams-section-carousel :global(.swiper-wrapper) {
+  width: 100vw;
+}
+
+.teams-section-carousel :global(.swiper-button-prev) {
+  right: 0 !important;
+}
+
+.teams-section-carousel :global(.swiper-button-prev)::after,
+.teams-section-carousel :global(.swiper-button-next)::after {
+  font-size: 16px !important;
+  transition: 0.3s all ease-in-out;
+}
+
+.teams-section-carousel :global(.swiper-button-prev):hover,
+.teams-section-carousel :global(.swiper-button-next):hover {
+  color: var(--light-green);
+}
+
+@media (max-width: 991.98px) {
+  .teams-section-carousel :global(.swiper-button-prev),
+  .teams-section-carousel :global(.swiper-button-next) {
+    display: none;
+  }
+}

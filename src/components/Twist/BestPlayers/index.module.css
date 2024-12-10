@@ -1,0 +1,136 @@
+.BestPlayers {
+  background-image: url(src/assets/images/Twist/ahlyground.svg);
+  min-height: 300px;
+  width: 100%;
+  margin-block: 2rem;
+}
+
+.Players {
+  width: 85%;
+  margin: auto;
+  color: white;
+  padding-block-start: 30px;
+}
+
+.Players h2 {
+  margin-block-end: 50px;
+}
+
+.BestPlayers :global(.slick-slide.slick-active) > div {
+  position: relative;
+}
+
+.superstar {
+  display: flex !important;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  background: transparent
+    url("src/assets/images/Twist/al-ahly-palyer-background.png") 0% 100%
+    no-repeat padding-box;
+}
+
+.superstar :is(h3, h6, span) {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  display: none;
+  z-index: 2;
+}
+
+.superstar > div {
+  display: flex;
+  height: 100%;
+}
+
+.superstar > div img {
+  width: 100%;
+  height: auto;
+  align-self: flex-end;
+  object-fit: cover;
+  transform-origin: 50% 100%;
+  transform: scale(0.8);
+  transition: all 450ms ease-in-out;
+  filter: grayscale(1);
+}
+
+.superstar h3 {
+  font-size: 3rem;
+  bottom: 2.5rem;
+  font-weight: 900;
+}
+
+.superstar h6 {
+  font-size: 1.2rem;
+  bottom: 0.75rem;
+}
+
+.superstar span {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: -1px -1px 0px var(--white), 1px -1px 0 var(--white),
+    -1px 1px 0 var(--white), 1px 1px 0 var(--white);
+  top: 0;
+  left: 0%;
+}
+
+.BestPlayers
+  :global(.slick-slide.slick-active.slick-center.slick-current)
+  .superstar
+  :is(h3, h6, span) {
+  display: block;
+}
+
+.BestPlayers
+  :global(.slick-slide.slick-active.slick-center.slick-current)
+  .superstar
+  > div
+  img {
+  transform: scale(1);
+  height: 100%;
+  filter: grayscale(0);
+  overflow: visible;
+  z-index: 1;
+}
+
+.BestPlayers :global(.slick-slider .slick-arrow.slick-prev),
+.BestPlayers :global(.slick-slider .slick-arrow.slick-next) {
+  content: url("src/assets/images/Twist/left-black.png");
+  padding: 10px;
+  width: 50px !important;
+  height: 56px;
+  background-color: white;
+  border-radius: 6px;
+  top: 30%;
+}
+
+.BestPlayers :global(.slick-slider .slick-arrow.slick-prev) {
+  content: url("src/assets/images/Twist/right-black.png");
+  left: 100%;
+}
+
+.BestPlayers :global(.slick-next) {
+  left: -8%;
+}
+
+@media (max-width: 480px) {
+  .BestPlayers
+    :global(.slick-slide.slick-active.slick-center.slick-current)
+    .superstar
+    > div
+    img,
+  .superstar > div img {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .superstar h3 {
+    font-size: 1.5rem;
+  }
+  .superstar span {
+    top: 20%;
+    left: 30%;
+  }
+}

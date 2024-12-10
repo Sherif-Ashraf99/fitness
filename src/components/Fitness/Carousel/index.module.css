@@ -1,0 +1,16 @@
+.fitness-carousel {
+    grid-column: 1/-1;
+}
+
+.fitness-carousel :global(.slick-arrow::before) {
+    color: var(--lighter-green);
+    font-size: 40px;
+}
+
+.fitness-carousel :global(.slick-next) {
+    right: -1%;
+}
+
+.fitness-carousel :global(.slick-prev) {
+    z-index: 5;
+}

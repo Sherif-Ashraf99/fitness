@@ -1,0 +1,31 @@
+.video-player-wrapper {
+    position: relative;
+}
+
+.video-player-wrapper .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    filter: brightness(65%) contrast(300%) hue-rotate(175deg) invert(90%);
+}
+
+.video-player-wrapper .video-thumbnail {
+    width:100%;
+    object-fit: cover;
+    max-height: 500px;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.video-player-wrapper .media-info {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 43%, rgba(0, 0, 0, 0));
+}
+
+.video-player-wrapper .media-info :first-child{
+    color:var(--light-green)
+}

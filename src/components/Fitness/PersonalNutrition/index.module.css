@@ -1,0 +1,218 @@
+.personal-nutrition {
+    padding-block-start: 3rem;
+}
+
+.personal-nutrition>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.personal-nutrition .form {
+    width: 45%;
+}
+
+.personal-nutrition .form h5 {
+    margin-block-start: 2rem;
+}
+
+.personal-nutrition .system-type-input {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem
+}
+
+.personal-nutrition .system-type-input label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+    background-color: var(--white-10-opacity);
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 20px;
+    margin-block: 5px;
+}
+
+.personal-nutrition .system-type-input label:has(input:checked) {
+    outline: var(--light-grey) solid;
+}
+
+.personal-nutrition .system-type-input input {
+    display: none;
+}
+
+.personal-nutrition .disliked-food-input {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.personal-nutrition .disliked-food-input label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    background-color: var(--white-10-opacity);
+    border-radius: 1rem;
+    font-size: 16px;
+    padding: 5px 1rem;
+}
+
+.personal-nutrition .disliked-food-input label:has(input:checked) {
+    background-color: var(--light-grey);
+    color: var(--bg-gradiant-3);
+}
+
+.personal-nutrition .disliked-food-input input {
+    display: none;
+}
+
+.personal-nutrition .able-to-prepare-food-input {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem
+}
+
+.personal-nutrition .able-to-prepare-food-input label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    background-color: var(--white-10-opacity);
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 20px;
+    margin-block: 5px;
+}
+
+.personal-nutrition .able-to-prepare-food-input label:has(input:checked) {
+    outline: var(--light-grey) solid;
+}
+
+.personal-nutrition .able-to-prepare-food-input input {
+    display: none;
+}
+
+.personal-nutrition .meals-per-day-input {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.personal-nutrition .meals-per-day-input label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    text-align: center;
+    background-color: var(--white-10-opacity);
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 20px;
+    margin-block: 5px;
+}
+
+.personal-nutrition .meals-per-day-input label:has(input:checked) {
+    outline: var(--light-grey) solid;
+}
+
+.personal-nutrition .meals-per-day-input input {
+    display: none;
+}
+
+.personal-nutrition .banner {
+    width: 45%;
+    text-align: center;
+}
+
+.personal-nutrition .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.personal-nutrition .confirm-btn {
+    width: 50%;
+    border-radius: 42px;
+    border: none;
+    background-color: var(--light-green);
+    color: var(--bg-gradiant-3);
+    padding-block: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-block-start: 10px;
+}
+
+.personal-nutrition .error-msg {
+    justify-content: flex-start;
+    color: tomato;
+    padding-block: 15px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-inline-start: 1.5rem;
+}
+
+.success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.failed{
+    color: red;
+    margin-block: 10px;
+    display: flex;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 991.98px) {
+    .personal-nutrition .meals-per-day-input label {
+        width: 100%;
+    }
+    .personal-nutrition .confirm-btn {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .personal-nutrition>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .personal-nutrition .form,
+    .personal-nutrition .banner {
+        width: 100%;
+    }
+
+    .personal-nutrition .form {
+        order: 1;
+    }
+
+    .personal-nutrition .disliked-food-input {
+        justify-content: center;
+    }
+
+    .personal-nutrition .banner img {
+        height: 12rem;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: 40% 20%;
+    }
+
+    .personal-nutrition .error-msg {
+        font-size: 16px;
+        margin-inline-start: 0;
+        text-align: center;
+    }
+}

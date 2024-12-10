@@ -1,0 +1,187 @@
+.footballMatchDetails h3 {
+  font-family: "Norsal-Regular";
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px;
+}
+.footballMatchDetails:global("table-responsive") {
+  overflow-x: auto;
+}
+.footballMatchDetails thead tr th {
+  font-family: "Norsal-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  padding-inline: 0px;
+}
+.footballMatchDetails thead tr th:nth-child(2) {
+  padding-right: 35px;
+  position: sticky;
+  right: 0px;
+}
+.footballMatchDetails tbody tr {
+  vertical-align: middle;
+  background: #002259;
+  border-radius: 3.796px;
+  border-bottom: solid 9px var(--cool-black-two);
+}
+.footballMatchDetails tbody tr:hover {
+  --bs-table-hover-color: white;
+  background-color: #004996;
+}
+.footballMatchDetails tbody tr td:nth-child(1) {
+  padding-right: 17px;
+  font-family: "Norsal-Regular";
+  font-size: 13.286px;
+  font-weight: 400;
+  width: 50px;
+}
+.footballMatchDetails tbody tr td {
+  padding-inline: 0px;
+  padding: 0.2rem;
+}
+.footballMatchDetails tbody tr td:nth-child(2) {
+  position: sticky;
+  right: 0px;
+  z-index: 3;
+}
+.footballMatchDetails tbody tr td:nth-child(3),
+.footballMatchDetails tbody tr td:nth-child(4),
+.footballMatchDetails tbody tr td:nth-child(5) {
+  width: 50px;
+  border-inline: solid 0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.footballMatchDetails tbody tr td:nth-child(3),
+.footballMatchDetails tbody tr td:nth-child(4),
+.footballMatchDetails tbody tr td:nth-child(5),
+.footballMatchDetails tbody tr td:nth-child(6) {
+  font-family: "Norsal-Regular";
+  font-size: 15.184px;
+  font-weight: 400;
+}
+.footballMatchDetails tbody tr td:nth-child(7) span {
+  font-family: "Norsal-Regular";
+  font-size: 12px;
+  font-weight: 400;
+}
+.footballMatchDetails tbody tr .lastMatches div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  padding-inline: 5px;
+}
+.footballMatchDetails tbody tr .lastMatches div:nth-child(2) span:nth-child(2) {
+  width: 60px;
+  height: 28px;
+  background: white;
+  color: black;
+  font-size: 15.848px;
+  font-weight: 600;
+  border-radius: 20.549px;
+}
+.footballMatchDetails tbody tr .lastMatches > span {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.footballMatchDetails tbody tr .lastMatches > span .lastMatch {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  text-align: center;
+}
+.footballMatchDetails tbody tr .lastMatches span > div {
+  width: 263px;
+  height: 87px;
+  position: absolute;
+  top: 30px;
+  left: -50px;
+  z-index: 5;
+  border-radius: 20.549px;
+  background: #051c41;
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.16);
+}
+.footballMatchDetails tbody tr:nth-child(2) .lastMatches span > div {
+  bottom: 35px;
+  top: auto;
+}
+.footballMatchDetails tbody tr .lastMatches > span:hover .lastMatch {
+  display: flex;
+}
+.footballMatchDetails
+  tbody
+  tr
+  .lastMatches
+  > span:hover
+  .lastMatch
+  div:nth-child(2)
+  span:nth-child(1)
+  img,
+.footballMatchDetails
+  tbody
+  tr
+  .lastMatches
+  > span:hover
+  .lastMatch
+  div:nth-child(2)
+  span:nth-child(3)
+  img {
+  margin-inline: 7px;
+}
+.footballMatchDetails
+  tbody
+  tr
+  .lastMatches
+  > span:hover
+  .lastMatch
+  div:nth-child(2)
+  span:nth-child(1),
+.footballMatchDetails
+  tbody
+  tr
+  .lastMatches
+  > span:hover
+  .lastMatch
+  div:nth-child(2)
+  span:nth-child(3) {
+  display: flex;
+  margin-left: 5px;
+}
+.footer {
+  margin-top: 65px;
+}
+.footer span span {
+  width: 14px;
+  height: 14px;
+  display: inline-flex;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+@media (max-width: 900px) {
+  .footballMatchDetails table {
+    width: 650px;
+  }
+  .footballMatchDetails thead tr th:nth-child(2) {
+    background-color: var(--cool-black-two);
+  }
+  .footballMatchDetails tbody tr td:nth-child(2) {
+    background-color: #002259;
+    /* width: 70px; */
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .footballMatchDetails tbody tr .lastMatches {
+    text-align: center;
+  }
+}

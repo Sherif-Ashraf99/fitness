@@ -1,0 +1,61 @@
+.main-media-Mobile :global(.slick-dots li button::before) {
+  color: var(--lighter-green);
+  font-size: 10px;
+}
+
+:global(.al-ahly) .main-media-Mobile :global(.slick-dots li button::before) {
+  color: var(--light-black);
+}
+
+.main-media-Mobile :global(.slick-dots li) {
+  margin: 0;
+}
+
+.main-media-Mobile :global(.media-card-global) {
+  height: 350px;
+}
+
+.main-media-Mobile :global(.slick-slide) {
+  padding-inline-start: 15px;
+}
+
+.serviceMobile {
+  height: 350px;
+  background-size: 100% 100%;
+  display: flex !important;
+  align-items: flex-end;
+  border-radius: 5px;
+ }
+
+ .serviceMobile.games {
+  background-image: url("src/assets/images/Twist/games.jfif");
+ }
+
+ .serviceMobile.fitness {
+  background-image: url("src/assets/images/Twist/fitness.jfif");
+ }
+
+
+ .serviceMobile > :nth-child(1) {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--white);
+  width: 100%;
+  padding-inline : 18px;
+  padding-block: 7px;
+  border-radius: 8px;
+  color: var(--emerald);
+  font-family: 'Norsal-Bold';
+	font-weight: 600;
+  font-size: 16px;
+ }
+
+ .serviceMobile > :nth-child(1) :first-child {
+  order: 2;
+ }
+
+ .serviceMobile > :nth-child(1) :last-child {
+  margin-inline: auto;
+  order: 1;
+ }

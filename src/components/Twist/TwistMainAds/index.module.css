@@ -1,0 +1,99 @@
+.twist-main-ads {
+  grid-column: 1/-1;
+}
+.twist-main-ads :global(.twist-header-main-ads) {
+  position: fixed;
+  top: 76px;
+  z-index: 999;
+}
+.twist-main-ads :global(.twist-side-inline-start-ads),
+.twist-main-ads :global(.twist-side-inline-end-ads) {
+  height: 100%; /*25rem*/
+}
+.twist-main-ads :global(.twist-header-main-ads),
+.twist-main-ads :global(.twist-side-inline-start-ads) figure,
+.twist-main-ads :global(.twist-side-inline-end-ads) figure {
+  margin-block-end: 0;
+}
+.twist-main-ads :global(.twist-side-inline-start-ads) > figure,
+.twist-main-ads :global(.twist-side-inline-end-ads) > figure {
+  height: 100%;
+}
+:global(.modal-twist-mobile-ads) {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 210px;
+  height: 190px;
+}
+:global(.modal-twist-mobile-ads) {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 290px;
+  height: 270px;
+  margin-block-end: 0;
+}
+:global(.modal-twist-mobile-ads) > div {
+  height: 100%;
+}
+:global(.modal-twist-mobile-ads .modal-header) {
+  background-color: var(--light-black);
+}
+:global(.modal-twist-mobile-ads .modal-header) > button {
+  filter: invert(1);
+}
+
+:global(.modal-twist-mobile-ads .modal-body),
+:global(.modal-twist-mobile-ads .modal-body) figure,
+:global(.modal-twist-mobile-ads .modal-body) img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin-block-end: 0;
+  object-fit: cover;
+}
+:global(.modal-twist-mobile-ads .modal-body) figure {
+  width: 100%;
+  height: 100%;
+}
+
+.twist-main-ads img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.twist-main-ads :global(.twist-side-inline-start-ads),
+.twist-main-ads :global(.twist-side-inline-end-ads) {
+  position: fixed;
+  top: 80%;
+  right: 0%;
+  transform: translateY(-80%);
+  z-index: 9999;
+  width: 80px;
+}
+.twist-main-ads :global(.twist-side-inline-end-ads) {
+  right: unset;
+  left: 0%;
+}
+@media (max-width: 991.98px) {
+  .twist-main-ads :global(.twist-header-main-ads) > img {
+    height: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .twist-main-ads :global(.twist-header-main-ads) {
+    max-width: calc(960px - 24px);
+  }
+}
+@media (min-width: 1200px) {
+  .twist-main-ads :global(.twist-header-main-ads) {
+    max-width: calc(1140px - 24px);
+  }
+}
+@media (min-width: 1400px) {
+  .twist-main-ads :global(.twist-header-main-ads) {
+    max-width: calc(1320px - 24px);
+  }
+}

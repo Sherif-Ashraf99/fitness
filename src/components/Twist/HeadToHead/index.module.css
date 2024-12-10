@@ -1,0 +1,11 @@
+.title {
+  font-size: 20px;
+  font-family: "Norsal-Medium";
+  font-weight: 500;
+}
+
+@media (max-width: 1199.98px) {
+  .title {
+    font-size: 16px;
+  }
+}

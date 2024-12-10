@@ -1,0 +1,19 @@
+.component {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 700ms ease-in-out;
+}
+
+.fade-in-effect {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+@media (max-width: 991.98px) {
+ .component{
+ grid-column: 1/-1 !important;
+} 
+
+}

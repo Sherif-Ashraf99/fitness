@@ -1,0 +1,12 @@
+.top-news  :global(p.card-date) {
+    color:  white !important;
+}
+
+.top-news > h3{
+    color: black !important;
+}
+
+.top-news  :global(span.card-tag) {
+    background-color: white !important;
+    color: #03183a;
+}

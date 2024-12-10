@@ -1,0 +1,80 @@
+.matches-calendar {
+  margin-block-start: 30px;
+}
+
+.matches-calendar-day {
+  padding: 0;
+}
+
+.matches-calendar-day:global(.active) strong {
+  color: var(--light-green);
+}
+
+.matches-calendar strong {
+  color: var(--anti-flash-white);
+}
+
+.all-days {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 30px;
+}
+
+.all-days :global(.nav) {
+  position: relative;
+  left: -50%;
+  transform: translateX(50%);
+  gap: 50px;
+}
+
+.all-matches {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--main-chinese-silver);
+}
+
+.live {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.live .circle-red {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--red);
+  animation: flicker infinite 1.2s;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .all-days {
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 20px;
+  }
+
+  .all-days :global(.nav) {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 25px;
+  }
+}

@@ -1,0 +1,103 @@
+.ScoringIntervals {
+  width: calc(100% / 2 - 10px);
+  border-radius: 6px;
+  color: var(--white);
+  padding: 20px;
+  --light-blue: 3, 24, 58;
+  background-color: rgba(var(--light-blue), 0.65);
+}
+
+:global(.al-ahly) .ScoringIntervals {
+  background-color: var(--light-black);
+}
+
+.ScoringIntervals h5 {
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid var(--light-green);
+}
+
+.all-scores {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 15px auto;
+  gap: 15px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.score-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.score-content span:last-child {
+  color: var(--light-green);
+  font-size: 20px;
+}
+
+.score-progress {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 6px;
+  height: 12px;
+  margin-block-start: 10px;
+}
+
+.score-progress .rating {
+  position: absolute;
+  background-color: var(--light-green);
+  height: 100%;
+  border-radius: 6px;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 2 - 10px);
+  /* margin: 20px auto 0 auto; */
+  background-color: var(--oxford-blue);
+  padding-block-start: 1rem;
+  padding-inline: 1rem;
+}
+.loader.al-ahly-page {
+  background-color: var(--light-black);
+}
+.loader > span {
+  display: flex;
+  width: 25%;
+  align-self: flex-start;
+}
+
+@media (max-width: 991.98px) {
+  .ScoringIntervals,
+  .all-scores,
+  .loader > :global(span) {
+    width: 100%;
+  }
+  .loader {
+    width: 100%;
+  }
+
+  .score-content {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .score-progress {
+    height: 6px;
+  }
+}

@@ -1,0 +1,36 @@
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.matches-calendar-day:global(.active) strong {
+    color: var(--light-green); 
+}
+
+.matches-calendar strong {
+    color:  var(--anti-flash-white);
+}
+
+:global(.al-ahly) .matches-calendar-day:global(.active) strong {
+    color: var(--light-black); 
+}
+
+:global(.al-ahly) .matches-calendar strong {
+    color:  var(--Suva-Grey);
+}
+
+.match-card-loader {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-block-start: 20px;
+  }
+
+
+@media (max-width: 575.98px) {
+.matches-calendar {
+padding: 10px;
+}   
+}

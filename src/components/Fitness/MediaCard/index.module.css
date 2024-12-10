@@ -1,0 +1,138 @@
+.media-card {
+    border-radius: 8px;
+    width: 100%;
+    height: 370px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.media-card .img-section {
+    width: 100%;
+    position: relative;
+}
+
+.media-card .img-section img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.media-card .img-section .heart-icon:lang(ar) {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+.media-card .img-section .heart-icon:lang(en) {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.media-card .img-section .heart-icon {
+    transition: all 300ms;
+}
+
+.media-card .img-section .heart-icon:hover {
+    fill: var(--lighter-green);
+    scale: 1.2;
+}
+
+.media-card .img-section .heart-icon.fav:hover {
+    fill: var(--light-grey)
+}
+
+.media-card .img-section .heart-icon path:last-child {
+    fill: var(--light-grey)
+}
+
+.media-card .img-section .heart-icon.fav path:last-child {
+    fill: var(--lighter-green);
+}
+
+.media-card .img-section .play-icon {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    translate: -50%;
+}
+
+.media-card .description-section {
+    font-size: 14px;
+    padding-block-start: 1rem;
+    padding-block-end: 0.5rem;
+    padding-inline: 10px;
+    height: 100%;
+    text-align: center;
+    background-color: var(--light-black);
+}
+
+.media-card .description-section p {
+    margin-bottom: 0;
+}
+
+/*IF CARD IS HORIZONTAL STYLES START */
+
+.media-card.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow: hidden;
+}
+
+.media-card.horizontal .img-section {
+    order: 2;
+    width: 35%;
+}
+
+.media-card.horizontal .img-section img {
+    height: 100%;
+}
+
+.media-card.horizontal .description-section {
+    width: 65%;
+    padding: 1rem;
+    background-color: var(--white-10-opacity);
+
+}
+
+.media-card.horizontal .description-section p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*IF CARD IS HORIZONTAL STYLES END */
+
+
+/* @media (max-width: 1199.98px) { 
+    .media-card {
+        width: calc(100% / 5 - 15px);
+    }   
+}
+
+
+@media (max-width: 991.98px) { 
+    .media-card {
+        width: calc(100% / 4 - 15px);
+    }   
+}
+
+
+@media (max-width: 767.98px) { 
+    .media-card {
+        width: calc(100% / 3 - 15px);
+    }   
+}
+
+
+@media (max-width: 575.98px) { 
+    .media-card {
+        width: calc(100% / 2 - 10px);
+    }   
+} */

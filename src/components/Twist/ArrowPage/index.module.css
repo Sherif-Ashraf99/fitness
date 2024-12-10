@@ -1,0 +1,44 @@
+.ArrowPage a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.arrow-web {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--main-chinese-silver);
+}
+
+.arrow-web span {
+  font-size: 20px;
+  font-family: "Norsal-Medium";
+  font-weight: 500;
+}
+
+.arrow-mob {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .arrow-mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-green);
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    margin-inline-start: 10px;
+  }
+
+  .arrow-web {
+    display: none;
+  }
+
+  .arrow-mob img {
+    width: 100%;
+  }
+}

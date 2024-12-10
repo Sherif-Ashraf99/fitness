@@ -1,0 +1,32 @@
+.not-found {
+    margin-block-start: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.not-found h2 {
+    color: var(--white);
+    font-size: 40px;
+    margin-block-end: 30px;
+}
+
+.not-found img {
+    width: 100%;
+    max-width: 200px;
+    margin-block-end: 30px;
+    padding-inline: 10px;
+}
+
+.not-found a {
+    display: block;
+    background-color: var(--white);
+    color: var(--catalina-blue);
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-block: 30px;
+}

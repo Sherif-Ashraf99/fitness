@@ -1,0 +1,27 @@
+.ask-ali-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-block: 5rem;
+}
+
+.ask-ali-page nav {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+}
+
+.ask-ali-page nav span {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--light-grey);
+    border-bottom: 2px solid var(--light-grey);
+    cursor: pointer;
+}
+
+.ask-ali-page nav span.active {
+    color: var(--light-green);
+    border-bottom: 5px solid var(--light-green);
+}

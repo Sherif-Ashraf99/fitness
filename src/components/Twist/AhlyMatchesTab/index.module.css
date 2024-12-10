@@ -1,0 +1,40 @@
+.ahly-matches {
+    max-width: 1024px;
+    margin-inline: auto;
+    margin-block-start:3rem ;
+    min-height: 400px;
+}
+
+.ahly-matches .controls {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-block:2rem ;
+}
+
+.ahly-matches .controls h3 {
+    color: var(--cool-black);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.ahly-matches .controls>div {
+    display: flex;
+}
+
+.ahly-matches .drop-down {
+    margin-inline:1rem;
+}
+
+
+@media (max-width: 575.98px) {
+    .controls h3 {
+        font-size: 15px;
+    }
+
+    .ahly-matches .drop-down {
+        margin-inline: 0.5rem;
+    }
+    
+}

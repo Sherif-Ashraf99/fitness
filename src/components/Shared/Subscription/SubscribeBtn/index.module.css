@@ -1,0 +1,47 @@
+.subscibe h4  {
+margin-block: 15px;
+}
+
+.subscibe-details {
+    grid-column: 1/3;
+    background-size: 100% 100%;
+    height: 500px;
+    display: flex;
+    align-items: end;
+    margin-block-start: 15px;
+}
+
+
+.subscibe-login {
+    background: transparent linear-gradient(180deg, #03183A70 0%, #042967 100%) 0% 0% no-repeat padding-box;    
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #E4E4E4;
+    text-align: center;
+}
+
+.subscibe-login h5 {
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+
+.subscibe-btn {
+    border:none;
+    border-radius: 6px;
+    background-color: var(--light-green);
+    color: var(--white);
+    font-weight:bold;
+    text-align: center;
+    padding: 15px 45px;
+}
+
+.show-more .subscibe-btn {
+    padding: 1rem 2rem;
+    margin-block: 1rem;    
+}

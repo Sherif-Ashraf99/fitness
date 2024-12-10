@@ -1,0 +1,133 @@
+.dates-table-section {
+	/* --maastricht-blue: 3, 24, 58;
+	background-color: rgba(var(--maastricht-blue), 0.5); */
+	font-size: 10px;
+	border-radius: 6px;
+}
+.medal-regular-Wrapper {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	margin-block: 25px;
+}
+
+.medal-regular-Wrapper > div {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 12px;
+	font-family: 'Norsal-Regular';
+	font-weight: 400;
+}
+.medal-regular-Wrapper img {
+	width: 15px;
+	height: 15px;
+}
+
+.dates-table {
+	background-color: var(--cool-black);
+	cursor: pointer;
+	color: var(--white);
+}
+
+.dates-table thead tr,
+.dates-table tbody tr {
+	display: grid;
+	grid-template-columns: 1fr repeat(19, minmax(auto, 4.5em));
+}
+.dates-table .table-top-head th {
+	padding-block-end: 0;
+}
+.dates-table .table-top-head th:first-child {
+	grid-column: 2 / span 8;
+	align-items: flex-start;
+}
+.dates-table .table-top-head th:last-child {
+	grid-column: 10 / span 11;
+	align-items: flex-start;
+}
+
+.dates-table tbody tr:nth-child(odd) {
+	--maastricht-blue: 3, 24, 58;
+	background-color: rgba(var(--maastricht-blue), 0.5);
+}
+.dates-table tbody tr:hover,
+.dates-table tbody tr:hover > * {
+	--bs-table-accent-bg: transparent;
+	outline: 1px solid var(--light-green);
+	color: var(--white);
+	font-weight: bold;
+}
+.dates-table tbody tr:hover > * {
+	outline: none;
+}
+
+.dates-table th {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.4em;
+	font-family: 'Norsal-SemiBold';
+	font-weight: 600;
+	padding-block: 1.6rem;
+}
+.dates-table th:first-child {
+	align-items: flex-start;
+}
+
+.dates-table th > div > img {
+	opacity: 0.4;
+}
+.dates-table th > div > img.active {
+	opacity: 1;
+}
+.dates-table td {
+	font-size: 1.4em;
+	font-family: 'Norsal-Medium';
+	font-weight: 500;
+	border-inline: 1px solid hsl(from var(--white) h s l / 0.1);
+}
+.dates-table td:first-child,
+.dates-table td:last-child {
+	border-inline: none;
+}
+
+.event-icon {
+	filter: invert(1);
+}
+
+.dates-table thead tr th,
+.dates-table tbody tr td {
+	text-align: center;
+}
+.dates-table thead tr th:first-child,
+.dates-table tbody tr td:first-child {
+	text-align: start;
+}
+
+.borderExceptBottom {
+	border: 1px solid var(--light-green) !important;
+	border-bottom: none !important;
+}
+
+.borderExceptTop {
+	border: 1px solid var(--light-green) !important;
+	border-top: none !important;
+}
+
+.borderLeftRight {
+	border-inline: 1px solid var(--light-green) !important;
+}
+
+@media (max-width: 992px) {
+	.dates-table thead tr,
+	.dates-table tbody tr {
+		grid-template-columns: 100px repeat(19, minmax(auto, 4em));
+	}
+	.dates-table th {
+		font-size: 1.25em;
+	}
+	.dates-table td {
+		font-size: 1.25em;
+	}
+}

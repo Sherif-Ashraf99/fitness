@@ -1,0 +1,22 @@
+.custom-loader {
+    --white: 255, 255, 255;
+    --space: 1.75rem;
+    width: 3.5px;
+    height: 4.5px;
+    border-radius: 50%;
+    color: rgba(var(--white), .65);
+    box-shadow: calc(1*var(--space)) calc(0*var(--space)) 0 0,
+        calc(0.707*var(--space)) calc(0.707*var(--space)) 0 1.1px,
+        calc(0*var(--space)) calc(1*var(--space)) 0 2.2px,
+        calc(-0.707*var(--space)) calc(0.707*var(--space)) 0 3.4px,
+        calc(-1*var(--space)) calc(0*var(--space)) 0 4.5px,
+        calc(-0.707*var(--space)) calc(-0.707*var(--space))0 5.6px,
+        calc(0*var(--space)) calc(-1*var(--space)) 0 6.7px;
+    animation: spinner-loading 1s infinite steps(8);
+}
+
+@keyframes spinner-loading {
+    100% {
+        transform: rotate(1turn);
+    }
+}

@@ -1,0 +1,10 @@
+.offer-banner{
+    grid-column: 2/3;
+    border-radius: 20px;
+    height: 250px;
+    background-image: url('src/assets/images/Fitness/offerBanner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+
+}

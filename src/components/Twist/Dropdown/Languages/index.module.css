@@ -1,0 +1,16 @@
+.languages-dropdown span {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.languages-dropdown>button,
+.languages-dropdown>button:hover {
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+}
+
+.languages-dropdown>button span {
+    padding-inline-end: 10px
+}

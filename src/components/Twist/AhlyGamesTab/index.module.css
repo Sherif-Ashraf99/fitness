@@ -1,0 +1,43 @@
+.ahly-games {
+    margin-block: 2rem;
+    position: relative;
+    background-color: var(--light-black);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block:2rem 5rem ;
+}
+
+.ahly-games::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/src/assets/images/Twist/gamesPageBG.png');
+    background-repeat: no-repeat;
+    background-position: 55% center;
+    background-size: cover;
+    filter: brightness(0.3);
+    border-radius: 1rem;
+}
+
+.ahly-games :is(h1,div,p) {
+   z-index: 1;
+}
+
+.ahly-games p {
+    padding-block: 1rem;
+    text-align: center;
+}
+
+.game-card-wrapper {
+    min-width: 70%;
+    background-color: var(--white);
+    border: 1px solid var(--cool-red);
+    padding: 5px;
+    border-radius: 5px;
+}

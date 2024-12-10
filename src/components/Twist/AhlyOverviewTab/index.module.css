@@ -1,0 +1,7 @@
+.ahly-overview :global(.most-news-global) > :nth-child(1) h3 {
+  color: var(--light-black);
+}
+
+.ahly-overview :global(.news-card-global) {
+  background-color: var(--light-black);
+}

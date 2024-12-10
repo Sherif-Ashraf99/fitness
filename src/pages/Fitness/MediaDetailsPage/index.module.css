@@ -1,0 +1,66 @@
+.video-player-wrapper {
+  position: relative;
+  /* height: clamp(200px, 30vw, 600px); */
+  width: 90%;
+  margin-inline: auto;
+}
+
+.video-player-wrapper h3 {
+  margin-block-end: 20px;
+}
+
+.video-player-wrapper p {
+  margin-block-start: 20px;
+}
+
+.video-player-wrapper .custom-controls {
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 2;
+}
+
+.video-player-wrapper .custom-controls .back-icon,
+.video-player-wrapper .custom-controls .heart-icon {
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+.video-player-wrapper .custom-controls .heart-icon:hover {
+  fill: var(--lighter-green);
+  scale: 1.2;
+}
+
+.video-player-wrapper .custom-controls .heart-icon.fav:hover {
+  fill: var(--light-grey);
+}
+
+.video-player-wrapper .custom-controls .heart-icon path:last-child {
+  fill: var(--light-grey);
+}
+
+.video-player-wrapper .custom-controls .heart-icon.fav path:last-child {
+  fill: var(--lighter-green);
+}
+
+.video-player-wrapper .custom-controls .back-icon:hover {
+  fill: var(--lighter-green);
+  scale: 1.2;
+}
+
+.video-player-wrapper :global(.react-player__preview) {
+  background-position: top !important;
+  height: 400px !important;
+}
+
+@media (max-width: 991.98px) {
+  .video-player-wrapper .custom-controls {
+    top: 25%;
+    padding: 1rem;
+  }
+}

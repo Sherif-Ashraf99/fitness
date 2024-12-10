@@ -1,0 +1,34 @@
+.tournaments-ranking {
+  display: flex;
+  flex-direction: column;
+  padding-inline-end: 1rem;
+  margin-block-start: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.tournaments-table-title {
+  color: var(--white);
+}
+
+.tournaments-ranking :global(.swiper-slide) {
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tournaments-ranking :global(.swiper-slide img) {
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .tournaments-ranking {
+    padding-inline-end: 0;
+  }
+  .tournaments-ranking :global(.swiper-slide) {
+    justify-content: center;
+  }
+}

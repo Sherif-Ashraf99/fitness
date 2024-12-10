@@ -1,0 +1,6 @@
+.error-message {
+  display: grid;
+  place-content: center;
+  background-color: var(--catalina-blue);
+  border-radius: 6px;
+}

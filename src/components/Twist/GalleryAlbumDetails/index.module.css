@@ -1,0 +1,55 @@
+.album-details {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1rem;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.album-details img {
+    width: 32%;
+    object-fit: cover;
+    object-position: center top;
+    max-height: 250px;
+}
+
+.album-details-loader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:10px;
+    margin-block: 1rem;
+}
+
+.album-details-loader >:global(span) {
+    width: 32%;
+    height: 240px;
+}
+
+.album-details-loader >:global(span span) {
+    height: 100%;
+    --highlight-color: var(--cool-black) !important
+}
+
+@media (max-width:768px) {
+
+    .album-details img {
+        width: 48.5%;
+    }
+
+    .album-details-loader >:global(span) {
+        width: 48.5%;
+    }
+}
+
+@media (max-width:576px) {
+
+    .album-details img {
+        width: 100%;
+    }
+      
+    .album-details-loader >:global(span) {
+        width: 100%;
+        height: 240px;
+    }
+}

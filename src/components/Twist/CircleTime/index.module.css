@@ -1,0 +1,107 @@
+.live {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.live :global(.CircularProgressbar-path) {
+  stroke: var(--light-green);
+}
+
+.live :global(.CircularProgressbar-trail) {
+  stroke: var(--anti-flash-white);
+}
+
+.live :global(.CircularProgressbar-text) {
+  fill: var(--white) !important;
+  font-size: 25px;
+}
+
+.top-event {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 0;
+  list-style: none;
+  transform: rotate(-90deg);
+}
+
+.top-event img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.6em;
+  width: 20px;
+  max-width: 100%;
+  object-fit: contain;
+  color: transparent;
+}
+.round-name {
+  font-size: 9px;
+  font-family: "Norsal-Regular";
+  font-weight: 400;
+  padding-inline: 10px;
+  text-align: center;
+  display: flex;
+}
+
+.live.calender-style .stop-watch,
+.live.calender-style .score,
+.live.calender-style .over-time {
+  font-size: 10px;
+}
+
+.live.calender-style img {
+  width: 9px;
+  height: 9px;
+  margin: -0.2rem;
+}
+
+.live.match-page .stop-watch,
+.live.match-page .over-time {
+  font-size: 14px;
+}
+
+.live.match-page img {
+  width: 11px;
+  height: 11px;
+  margin: -0.3rem;
+}
+
+@media (max-width: 1199.98px) {
+  .live.calender-style,
+  .live.match-page {
+    scale: unset;
+    top: 50%;
+  }
+
+  .live.calender-style .stop-watch,
+  .live.calender-style .over-time {
+    font-size: 14px;
+  }
+
+  .live.calender-style img {
+    width: 11px;
+    height: 11px;
+  }
+
+  .live.calender-style img {
+    margin: -0.3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .live {
+    scale: 0.8;
+  }
+}
+
+@media (max-width: 400px) {
+  .live {
+    top: 35%;
+    scale: 0.6;
+  }
+}

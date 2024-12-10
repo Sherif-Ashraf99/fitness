@@ -1,0 +1,27 @@
+.Statistics-Tab {
+  margin-block-start: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Statistics-Tab h3 {
+  color: var(--light-black);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.AllStatistics {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 90%;
+  margin: 20px auto 0 auto;
+}
+
+@media (max-width: 991.98px) {
+  .AllStatistics {
+    width: 100%;
+  }
+}

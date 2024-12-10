@@ -1,0 +1,66 @@
+.all-MostViewed {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.all-MostViewed .most-view{
+    background: var(--cool-black);
+    padding-block-end: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.all-MostViewed > h3{
+    margin-block-start: 20px;
+    margin-block-end: 0px;
+    background-color: var(--light-green);
+    color: white;
+    border-radius: 6px 6px 0px 0px;
+    border-bottom:2px solid var(--cool-black);
+    padding-block: 20px;
+    padding-inline-start: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content{
+    padding:20px 10px; 
+    font-weight: 700;
+}
+
+.most-view-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom:2px solid var(--cool-black);
+    background: linear-gradient(to right,var(--light-green),var(--light-green)) 100% 100%/0 100% no-repeat;
+    transition: all 0.4s ease-out;
+    background-size: 0% 5%;
+}
+
+.most-view-item:hover{
+    color: var(--light-green);
+    background-size: 100% 5%;
+}
+
+.most-view-item:last-child {
+    margin-block-end: 0;
+}
+
+.most-view-item h6 {
+    color: var(--light-green);
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease-out !important;
+}
+
+.most-view-item:hover h6 {
+    color: var(--white);
+}
+

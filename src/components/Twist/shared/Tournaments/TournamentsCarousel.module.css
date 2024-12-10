@@ -1,0 +1,100 @@
+.tournaments-carousel :global(.swiper) {
+  min-height: 90px;
+}
+
+.tournaments-carousel {
+  min-height: 90px;
+}
+
+.tournament-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-inline: 5px;
+}
+
+.tournament-card .img-league,
+.tournament-card span {
+  opacity: 0.65;
+}
+
+.tournament-card.active .img-league,
+.tournament-card.active span {
+  opacity: 1;
+  font-weight: bolder;
+}
+
+.img-league {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-league img {
+  height: 45px;
+  width: 45px;
+}
+
+.tournament-card span {
+  flex-grow: 1;
+  color: var(--white);
+  font-size: 13px;
+}
+
+.tournaments-carousel :global(.swiper-pagination-bullet-active) {
+  background-color: var(--light-green);
+  padding: 5px;
+}
+
+.tournaments-carousel :global(.swiper-pagination-bullet) {
+  background-color: var(--light-green);
+  padding: 5px;
+  margin-block: 50px;
+}
+
+.tournaments-carousel :global(.swiper-wrapper) {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 991.98px) {
+  .tournaments-carousel :global(.swiper) {
+    min-height: 120px;
+  }
+
+  .tournaments-carousel {
+    min-height: 120px;
+  }
+
+  .tournament-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tournament-card .img-league {
+    margin-block-end: 10px;
+  }
+
+  .tournaments-carousel :global(.swiper-wrapper) {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .tournament-card .img-league {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .tournament-card .img-league img {
+    height: 25px;
+    width: 25px;
+  }
+}

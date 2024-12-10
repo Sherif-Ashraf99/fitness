@@ -1,0 +1,11 @@
+@media (max-width: 991.98px) {
+  .related-media {
+    margin-block-start: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .related-media .related-media-item:first-of-type :global(.media-card-global) {
+    height: 350px;
+  }
+}

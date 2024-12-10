@@ -1,0 +1,30 @@
+.tournaments-statistics {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.tournaments-table-title {
+  color: var(--white);
+}
+
+.tournaments-statistics :global(.swiper-slide) {
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tournaments-statistics :global(.swiper-slide img) {
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .tournaments-statistics :global(.swiper-slide) {
+    justify-content: center;
+  }
+}
